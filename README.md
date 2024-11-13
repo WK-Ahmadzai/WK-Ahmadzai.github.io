@@ -4,46 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wali Khan Ahmadzai - Profile</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file for styling -->
 </head>
 <body>
 
   <header>
-    <h1>Wali Khan Ahmadzai</h1>
-    <p><a href="https://github.com/walikhanahmadzai" target="_blank">Graduate Student in Agricultural Economics</a> | <a href="https://www.linkedin.com/in/walikhanahmadzai/" target="_blank">PhD Aspirant</a></p>
-    <img src="profile-picture.jpg" alt="Wali Khan Ahmadzai" class="profile-img">
+    <div class="profile-container">
+      <img src="images/profile-picture.jpg" alt="Wali Khan Ahmadzai" class="profile-img">
+      <h1>Wali Khan Ahmadzai</h1>
+      <p><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a></p>
+      <p><strong>Education:</strong> MSc in Agricultural Economics (Expected March 2025) - University of Tsukuba, Japan</p>
+      <p><strong>Research Interests:</strong> Sustainable Development, Agricultural Economics, Energy Policy</p>
+    </div>
   </header>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (Tabs) -->
   <nav>
     <ul>
-      <li><a href="#" onclick="showTab('overview')">Overview</a></li>
       <li><a href="#" onclick="showTab('work-experience')">Work Experience</a></li>
       <li><a href="#" onclick="showTab('research')">Research</a></li>
       <li><a href="#" onclick="showTab('outreach')">Outreach</a></li>
     </ul>
   </nav>
 
-  <!-- Main Content -->
-  <div id="overview" class="tab-content">
-    <!-- Content for Overview Tab will be inserted here -->
-    <h2>Overview</h2>
-    <p><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a></p>
-    <p><strong>Phone:</strong> +81 080-6458-9072</p>
-    <p><strong>Education:</strong> MSc in Agricultural Economics (Expected March 2025) - University of Tsukuba, Japan</p>
-  </div>
-
-  <div id="work-experience" class="tab-content" style="display:none;">
-    <!-- Content for Work Experience Tab will be inserted here -->
+  <!-- Tab Content -->
+  <div id="work-experience" class="tab-content">
     <h2>Work Experience</h2>
-    <p><strong>Intern, Marketing Intelligence Team - GPSS Group</strong> (Tokyo, Japan, August 2024)</p>
-    <p>Collaborated with the marketing team to analyze trends in the Japanese market for energy services.</p>
-    <p><strong>Intern, Remote Sensing and Satellite Data Utilization - Japan Space System</strong> (Tokyo, Japan, September 2023)</p>
-    <p>Gained hands-on experience in analyzing satellite data for agricultural applications.</p>
+    <ul>
+      <li><strong>Intern, Marketing Intelligence Team - GPSS Group</strong> (Tokyo, Japan, August 2024)</li>
+      <li><strong>Intern, Remote Sensing and Satellite Data Utilization - Japan Space System</strong> (Tokyo, Japan, September 2023)</li>
+    </ul>
   </div>
 
   <div id="research" class="tab-content" style="display:none;">
-    <!-- Content for Research Tab will be inserted here -->
     <h2>Research</h2>
     <p><strong>Current Researches:</strong></p>
     <ul>
@@ -56,9 +49,7 @@
   </div>
 
   <div id="outreach" class="tab-content" style="display:none;">
-    <!-- Content for Outreach Tab will be inserted here -->
     <h2>Outreach</h2>
-    <p><strong>Memberships:</strong></p>
     <ul>
       <li><a href="https://www.aesjapan.or.jp/englishtop" target="_blank">The Agricultural Economics Society of Japan</a> (April 2024 – Present)</li>
       <li><a href="https://fsraj.smoosy.atlas.jp/ja" target="_blank">Japan Food System Society</a> (April 2024 – Present)</li>
@@ -69,6 +60,6 @@
     <p>For academic inquiries, contact me at <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a> or <a href="mailto:wk.ahmadzai@szu.edu.af">wk.ahmadzai@szu.edu.af</a>. Phone: +81 080-6458-9072</p>
   </footer>
 
-  <script src="script.js"></script> <!-- Add your JavaScript here for tab functionality -->
+  <script src="js/script.js"></script> <!-- Add your JavaScript here for tab functionality -->
 </body>
 </html>
