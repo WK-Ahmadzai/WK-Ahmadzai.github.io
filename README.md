@@ -10,35 +10,59 @@
 
   <header>
     <h1>Wali Khan Ahmadzai</h1>
-    <p><a href="https://github.com/walikhanahmadzai">Graduate Student in Agricultural Economics</a> | <a href="https://www.linkedin.com/in/walikhanahmadzai/">PhD Aspirant</a></p>
-    <img src="profile-picture.jpg" alt="Wali Khan Ahmadzai" style="width:150px;">
+    <p><a href="https://github.com/walikhanahmadzai" target="_blank">Graduate Student in Agricultural Economics</a> | <a href="https://www.linkedin.com/in/walikhanahmadzai/" target="_blank">PhD Aspirant</a></p>
+    <img src="profile-picture.jpg" alt="Wali Khan Ahmadzai" class="profile-img">
   </header>
 
   <!-- Navigation Bar -->
   <nav>
     <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#work-experience">Work Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#outreach">Outreach</a></li>
+      <li><a href="#" onclick="showTab('overview')">Overview</a></li>
+      <li><a href="#" onclick="showTab('work-experience')">Work Experience</a></li>
+      <li><a href="#" onclick="showTab('research')">Research</a></li>
+      <li><a href="#" onclick="showTab('outreach')">Outreach</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
-  <div id="overview">
+  <div id="overview" class="tab-content">
     <!-- Content for Overview Tab will be inserted here -->
+    <h2>Overview</h2>
+    <p><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a></p>
+    <p><strong>Phone:</strong> +81 080-6458-9072</p>
+    <p><strong>Education:</strong> MSc in Agricultural Economics (Expected March 2025) - University of Tsukuba, Japan</p>
   </div>
 
-  <div id="work-experience">
+  <div id="work-experience" class="tab-content" style="display:none;">
     <!-- Content for Work Experience Tab will be inserted here -->
+    <h2>Work Experience</h2>
+    <p><strong>Intern, Marketing Intelligence Team - GPSS Group</strong> (Tokyo, Japan, August 2024)</p>
+    <p>Collaborated with the marketing team to analyze trends in the Japanese market for energy services.</p>
+    <p><strong>Intern, Remote Sensing and Satellite Data Utilization - Japan Space System</strong> (Tokyo, Japan, September 2023)</p>
+    <p>Gained hands-on experience in analyzing satellite data for agricultural applications.</p>
   </div>
 
-  <div id="research">
+  <div id="research" class="tab-content" style="display:none;">
     <!-- Content for Research Tab will be inserted here -->
+    <h2>Research</h2>
+    <p><strong>Current Researches:</strong></p>
+    <ul>
+      <li>Empowering Afghan Women through the Saffron Industry</li>
+      <li>Japanese Consumers’ Preferences for Afghan Saffron</li>
+      <li>Afghan Consumer Perceptions of Genome Edited Food</li>
+    </ul>
+    <p><strong>Publications:</strong></p>
+    <p><em>Ahmadzai, W. K., & Aryobi, H. G.</em> "Natural and Socio-economic Factors Affecting Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</p>
   </div>
 
-  <div id="outreach">
+  <div id="outreach" class="tab-content" style="display:none;">
     <!-- Content for Outreach Tab will be inserted here -->
+    <h2>Outreach</h2>
+    <p><strong>Memberships:</strong></p>
+    <ul>
+      <li><a href="https://www.aesjapan.or.jp/englishtop" target="_blank">The Agricultural Economics Society of Japan</a> (April 2024 – Present)</li>
+      <li><a href="https://fsraj.smoosy.atlas.jp/ja" target="_blank">Japan Food System Society</a> (April 2024 – Present)</li>
+    </ul>
   </div>
 
   <footer>
