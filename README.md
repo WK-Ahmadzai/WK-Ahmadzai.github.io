@@ -1,5 +1,7 @@
 <h1> Wali Khan Ahmadzai! <br/><a href="https://github.com/walikhanahmadzai"> Graduate Student in Agricultural Economics </a> | <a href="https://www.linkedin.com/in/walikhanahmadzai/">PhD Aspirant</a></h1>
 
+[**Download My CV**]( https://github.com/WK-Ahmadzai/CV/blob/main/Ahmadzai_CV.pdf)
+
 <h2> Education:</h2>
 
 - **MSc in Agricultural Economics** (Expected March 2025)  
