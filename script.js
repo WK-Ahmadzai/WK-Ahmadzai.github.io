@@ -1,26 +1,28 @@
-// Function to switch between tabs
-document.addEventListener("DOMContentLoaded", function() {
-    const tabs = document.querySelectorAll(".tab-link");
-    const tabContents = document.querySelectorAll(".tab-content");
+// Handle tab switching
+document.querySelectorAll('.tab-link').forEach(tabLink => {
+    tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
 
-    // Add click event listener to each tab link
-    tabs.forEach(tab => {
-        tab.addEventListener("click", function(e) {
-            // Remove active class from all tabs and contents
-            tabs.forEach(tab => tab.classList.remove("active"));
-            tabContents.forEach(content => content.classList.remove("active"));
-
-            // Add active class to clicked tab and corresponding content
-            tab.classList.add("active");
-            const targetId = tab.getAttribute("href").substring(1); // Get target section ID
-            const targetContent = document.getElementById(targetId);
-            targetContent.classList.add("active");
+        // Hide all tab content sections
+        document.querySelectorAll('.tab-content').forEach(tabContent => {
+            tabContent.style.display = 'none';
         });
-    });
 
-    // Optionally, you can also set the first tab as active by default
-    if (tabs.length > 0 && tabContents.length > 0) {
-        tabs[0].classList.add("active");
-        tabContents[0].classList.add("active");
-    }
+        // Show the clicked tab's content
+        const tabId = this.getAttribute('data-tab');
+        const targetTabContent = document.getElementById(tabId);
+        targetTabContent.style.display = 'block';
+
+        // Highlight the active tab
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+
+// Default to show the "About" section when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('about').style.display = 'block';
+    document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
 });
