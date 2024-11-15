@@ -75,11 +75,15 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Profile Photo */
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 180px; /* Make photo bigger */
+    height: 180px;
+    border-radius: 50%; /* Circle shape */
     margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border: 5px solid #00bcd4; /* Add border for realism */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 /* Footer */
