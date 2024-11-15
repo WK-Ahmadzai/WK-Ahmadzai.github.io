@@ -1,151 +1,147 @@
-/* Reset default styles */
+/* Reset defaults */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and main structure */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #f4f6f8;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header Section */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
-    background-color: #00695c; /* Dark green for professionalism */
+    background-color: #005A8B;
     color: #fff;
-    padding: 15px 0;
-    text-align: center;
+    padding: 20px 0;
+    width: 100%;
 }
 
 .header-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    text-align: center;
 }
 
 .portfolio-name {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #ffeb3b; /* Yellow for vibrancy */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.tabs-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.tabs-nav li {
+nav ul li {
     margin: 0 15px;
 }
 
-.tabs-nav a {
-    text-decoration: none;
+nav ul li a {
     color: #fff;
-    font-size: 18px;
-    font-weight: normal;
-    transition: color 0.3s, font-weight 0.3s;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.tabs-nav a:hover {
-    color: #ffeb3b; /* Highlight color */
+nav ul li a:hover, .tab-link.active {
+    color: #0a4d7b;
+    border-bottom: 2px solid #0a4d7b;
 }
 
-.tabs-nav .active {
-    color: #ffeb3b;
-    font-weight: bold;
+main {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #fff;
 }
 
-/* Tab content */
 .tab-content {
     display: none;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
 }
 
 .tab-content.active {
     display: block;
 }
 
-/* About section */
 .about-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-right: 20px;
     object-fit: cover;
-    border: 5px solid #00796b; /* Professional border */
+    margin-right: 20px;
 }
 
 .bio-box {
-    background-color: #e0f2f1; /* Light turquoise for the bio */
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 15px;
+    max-width: 800px;
 }
 
-.social-icons a {
-    margin-right: 10px;
-    font-size: 24px;
-    color: #00796b;
-    transition: color 0.3s;
+.bio-box ul {
+    list-style: none;
+    margin-top: 10px;
 }
 
-.social-icons a:hover {
-    color: #ffeb3b; /* Highlight on hover */
+.bio-box-text {
+    margin-top: 20px;
+    line-height: 1.6;
 }
 
-/* Footer Section */
+.cv-link {
+    display: inline-block;
+    background-color: #005A8B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cv-link:hover {
+    background-color: #0a4d7b;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
 footer {
-    background-color: #00796b;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
     text-align: center;
-    margin-top: 40px;
 }
 
 .footer-line {
+    width: 100%;
     height: 2px;
-    background-color: #ffeb3b;
+    background-color: #005A8B;
     margin-bottom: 10px;
-}
-
-/* Link styles */
-a {
-    color: #00796b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .about-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .tabs-nav ul {
-        flex-direction: column;
-    }
-
-    .tabs-nav li {
-        margin: 10px 0;
-    }
 }
