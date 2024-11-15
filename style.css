@@ -19,17 +19,24 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keep header on top */
 }
 
-header .header-wrapper {
+/* Header Wrapper */
+.header-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-header .portfolio-name {
-    font-size: 2.5em;
+/* Portfolio Name */
+.portfolio-name {
+    font-size: 3em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Navigation tabs */
@@ -37,22 +44,27 @@ header .portfolio-name {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .tabs-nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .tabs-nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.tabs-nav ul li a.active {
     font-weight: bold;
 }
 
 /* Content sections */
 main {
-    margin-top: 20px;
+    margin-top: 100px; /* Push content down to make space for header */
 }
 
 /* Tab content */
@@ -71,26 +83,26 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: rgba(51, 51, 51, 0.7); /* Transparent black */
+    background-color: rgba(173, 216, 230, 0.7); /* Light Blue Transparent */
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed; /* Fix the footer at the bottom */
+    padding: 15px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: -1; /* Ensure it's behind the content */
+    z-index: -1; /* Ensure it's behind content */
 }
 
 /* Footer Line */
 .footer-line {
-    height: 1px; /* Thin line */
-    background-color: #fff; /* White divider */
+    height: 2px;
+    background-color: #fff;
     margin: 0 10px;
 }
 
 /* Footer Text */
 footer p {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* Profile section */
