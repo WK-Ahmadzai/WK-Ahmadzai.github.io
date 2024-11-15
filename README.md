@@ -9,6 +9,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wali Khan Ahmadzai's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add some basic styles for the contact section and icons */
+        .contact-social {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-size: cover;
+            transition: opacity 0.3s;
+        }
+        .facebook { background-image: url('facebook-icon.png'); }
+        .twitter { background-image: url('x-icon.png'); }
+        .instagram { background-image: url('instagram-icon.png'); }
+        .linkedin { background-image: url('linkedin-icon.png'); }
+        .google-scholar { background-image: url('google-scholar-icon.png'); }
+
+        .contact-social a:hover .social-icon {
+            opacity: 0.7;
+        }
+
+        /* Styling for the footer */
+        footer p {
+            position: relative;
+            font-size: 14px;
+        }
+        footer .footer-line {
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+        footer p::after {
+            content: "© 2024 Wali Khan Ahmadzai";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -88,49 +132,28 @@
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a>, <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a></li>
             </ul>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank">
-                    <img src="researchgate-icon.png" alt="ResearchGate">
-                </a>
-                <a href="https://x.com/WKAhmadzai1" target="_blank">
-                    <img src="x-icon.png" alt="X">
-                </a>
-                <a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank">
-                    <img src="facebook-icon.png" alt="Facebook">
-                </a>
-                <a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank">
-                    <img src="google-scholar-icon.png" alt="Google Scholar">
-                </a>
+            <div class="contact-social">
+                <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" class="social-icon linkedin"></a>
+                <a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank" class="social-icon researchgate"></a>
+                <a href="https://x.com/WKAhmadzai1" target="_blank" class="social-icon twitter"></a>
+                <a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank" class="social-icon facebook"></a>
+                <a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank" class="social-icon google-scholar"></a>
             </div>
         </div>
 
         <div id="outreach" class="tab-content">
-            <h2>Professional Development / Outreach</h2>
-            <p><strong>Internships:</strong></p>
+            <h2>Professional Development</h2>
+            <p>Professional Development and Workshops Attended</p>
             <ul>
-                <li><strong>Intern</strong>, Japan Agricultural Economics Society (Summer 2023)</li>
-                <li><strong>Intern</strong>, Global Partnership for Saffron Producers (Summer 2024)</li>
-            </ul>
-            <p><strong>Memberships:</strong></p>
-            <ul>
-                <li>Member, Agricultural Economics Society of Japan</li>
-                <li>Member, Afghan Society for Agricultural Development</li>
-            </ul>
-            <p><strong>Presentations:</strong></p>
-            <ul>
-                <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
+                <li><a href="https://www.jica.go.jp/english/">JICA Workshops</a></li>
+                <li><a href="https://www.undp.org/afghanistan">UNDP Social Cohesion Workshop</a></li>
             </ul>
         </div>
     </main>
 
     <footer>
         <div class="footer-line"></div>
-        <p>© 2024 Wali Khan Ahmadzai</p>
+        <p>Created by Wali Khan Ahmadzai</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
