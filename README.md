@@ -1,7 +1,3 @@
-<meta name="description" content="Wali Khan Ahmadzai's portfolio showcasing work experience, research, and contact information.">
-<meta name="keywords" content="Wali Khan Ahmadzai, portfolio, Agricultural Economics, research, contact">
-<meta name="author" content="Wali Khan Ahmadzai">
-<title>Wali Khan Ahmadzai - Portfolio</title>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +29,7 @@
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a>, <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a></p>
+                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -86,7 +82,7 @@
             <h2>Contact Me</h2>
             <p>If you would like to get in touch with me, please use the contact information below:</p>
             <ul>
-                <li><strong>Email:</strong> <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a>, <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a></li>
+                <li><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</li>
             </ul>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank">
