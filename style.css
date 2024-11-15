@@ -8,16 +8,16 @@
 /* Body and main structure */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background */
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Section */
 header {
-    background-color: #00796b;
+    background-color: #00695c; /* Dark green for professionalism */
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -30,12 +30,15 @@ header {
 .portfolio-name {
     font-size: 36px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffeb3b; /* Yellow for vibrancy */
 }
 
 .tabs-nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .tabs-nav li {
@@ -46,11 +49,17 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.tabs-nav a:hover {
+    color: #ffeb3b; /* Highlight color */
 }
 
 .tabs-nav .active {
     color: #ffeb3b;
+    font-weight: bold;
 }
 
 /* Tab content */
@@ -66,9 +75,11 @@ header {
     display: block;
 }
 
+/* About section */
 .about-box {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .profile-pic {
@@ -76,15 +87,29 @@ header {
     width: 150px;
     height: 150px;
     margin-right: 20px;
+    object-fit: cover;
+    border: 5px solid #00796b; /* Professional border */
 }
 
 .bio-box {
-    background-color: #e0f2f1;
+    background-color: #e0f2f1; /* Light turquoise for the bio */
     padding: 10px;
     border-radius: 8px;
     margin-top: 15px;
 }
 
+.social-icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #00796b;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b; /* Highlight on hover */
+}
+
+/* Footer Section */
 footer {
     background-color: #00796b;
     color: #fff;
