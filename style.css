@@ -1,77 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: rgba(0, 123, 255, 0.7); /* Soft blue color */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.tab-content {
-    display: none;
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-.tab-content h2 {
+    background-color: #f4f8fb;
     color: #333;
+    line-height: 1.6;
 }
 
-.tab-link.active {
+/* Header */
+header {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-name {
+    font-size: 2rem;
     font-weight: bold;
 }
 
-.about-box {
+.tabs-nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
+}
+
+.tabs-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.tabs-nav li a:hover {
+    color: #00acc1;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.about-box,
+.bio-box,
+.work-box,
+.research-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.bio-box {
-    background-color: rgba(0, 123, 255, 0.2); /* Soft blue background */
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 15px;
-    width: 90%;
-    max-width: 600px;
+/* Footer */
+.footer-line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-top: 40px;
 }
 
+footer p {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Link Styling for CV Download */
+.cv-link {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cv-link:hover {
+    background-color: #0097a7;
+}
+
+/* Social Media Icons */
 .social-media a {
     margin: 0 10px;
 }
@@ -81,16 +118,14 @@ nav ul li a {
     height: 30px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tabs-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
