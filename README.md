@@ -1,3 +1,7 @@
+<meta name="description" content="Wali Khan Ahmadzai's portfolio showcasing work experience, research, and contact information.">
+<meta name="keywords" content="Wali Khan Ahmadzai, portfolio, Agricultural Economics, research, contact">
+<meta name="author" content="Wali Khan Ahmadzai">
+<title>Wali Khan Ahmadzai - Portfolio</title>
 <!DOCTYPE html>
 <html lang="en">
 <head>
