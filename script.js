@@ -1,17 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tabs = document.querySelectorAll(".tab-link");
-    const tabContents = document.querySelectorAll(".tab-content");
+// Handle tab switching
+document.querySelectorAll('.tab-link').forEach(tabLink => {
+    tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
 
-    tabs.forEach(tab => {
-        tab.addEventListener("click", (e) => {
-            e.preventDefault();
-
-            // Hide all tab content
-            tabContents.forEach(content => content.classList.remove("active"));
-
-            // Show the clicked tab's content
-            const target = e.target.getAttribute("data-tab");
-            document.getElementById(target).classList.add("active");
+        // Hide all tab content sections
+        document.querySelectorAll('.tab-content').forEach(tabContent => {
+            tabContent.style.display = 'none';
         });
+
+        // Show the clicked tab's content
+        const tabId = this.getAttribute('data-tab');
+        const targetTabContent = document.getElementById(tabId);
+        targetTabContent.style.display = 'block';
+
+        // Highlight the active tab
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        this.classList.add('active');
     });
+});
+
+// Default to show the "About" section when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('about').style.display = 'block';
+    document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
 });
