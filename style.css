@@ -5,30 +5,40 @@
     box-sizing: border-box;
 }
 
+/* Body */
 html, body {
     font-family: Arial, sans-serif;
     height: 100%;
     background-color: #f4f6f8;
     color: #333;
+    line-height: 1.6;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure footer stays at the bottom */
 }
 
+/* Header */
 header {
     background-color: #005A8B;
     color: #fff;
     padding: 20px 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 .header-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio-name {
@@ -60,10 +70,12 @@ nav ul li a:hover, .tab-link.active {
     border-bottom: 2px solid #0a4d7b;
 }
 
+/* Tab Content */
 main {
     flex: 1;
     padding: 40px 20px;
     background-color: #fff;
+    padding-top: 80px; /* Space for fixed header */
 }
 
 .tab-content {
@@ -74,10 +86,13 @@ main {
     display: block;
 }
 
-.about-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* About, Bio, and Profile Styling */
+.about-box,
+.bio-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
@@ -87,10 +102,6 @@ main {
     height: 150px;
     object-fit: cover;
     margin-right: 20px;
-}
-
-.bio-box {
-    max-width: 800px;
 }
 
 .bio-box ul {
@@ -103,6 +114,7 @@ main {
     line-height: 1.6;
 }
 
+/* CV Link */
 .cv-link {
     display: inline-block;
     background-color: #005A8B;
@@ -118,6 +130,7 @@ main {
     background-color: #0a4d7b;
 }
 
+/* Social Media Icons */
 .social-media a {
     margin: 0 10px;
 }
@@ -132,11 +145,13 @@ main {
     transform: scale(1.1);
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 15px 0;
     text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 .footer-line {
@@ -144,4 +159,17 @@ footer {
     height: 2px;
     background-color: #005A8B;
     margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
