@@ -12,19 +12,19 @@
             <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
             <nav class="tabs-nav">
                 <ul>
-                    <li><a href="#about" class="tab-link active">About</a></li>
-                    <li><a href="#work" class="tab-link">Work Experience</a></li>
-                    <li><a href="#research" class="tab-link">Research</a></li>
-                    <li><a href="#cv" class="tab-link">CV</a></li>
-                    <li><a href="#contact" class="tab-link">Contact</a></li>
-                    <li><a href="#outreach" class="tab-link">Professional Development</a></li>
+                    <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                    <li><a href="#" class="tab-link" data-tab="work">Work Experience</a></li>
+                    <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
+                    <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
+                    <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
+                    <li><a href="#" class="tab-link" data-tab="outreach">Professional Development</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="about" class="tab-content active">
+        <div id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
@@ -43,9 +43,9 @@
                     <p>I am actively seeking Ph.D. opportunities to engage in multidisciplinary research that fosters impactful change in Agricultural Economics and related fields. My ultimate goal is to leverage my expertise to support sustainable development and economic resilience.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="work" class="tab-content">
+        <div id="work" class="tab-content">
             <h2>Work Experience & Teaching</h2>
             <p><strong>Teaching Assistant</strong>, <a href="https://szu.edu.af/en" target="_blank">Shaikh Zayed University</a>, Afghanistan (April 2019 - March 2022)</p>
             <p><strong>Research Assistant</strong>, University of Tsukuba, Japan (2022-Present)</p>
@@ -57,9 +57,9 @@
                 <li>AgEc630 - Applied Econometrics (Spring 2021)</li>
                 <li>Econometrics Using R Programming (2023 - Present)</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="research" class="tab-content">
+        <div id="research" class="tab-content">
             <h2>Research</h2>
             <p><strong>Publications:</strong></p>
             <ul>
@@ -71,14 +71,14 @@
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="cv" class="tab-content">
+        <div id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
-        </section>
+        </div>
 
-        <section id="contact" class="tab-content">
+        <div id="contact" class="tab-content">
             <h2>Contact Me</h2>
             <p>If you would like to get in touch with me, please use the contact information below:</p>
             <ul>
@@ -101,9 +101,9 @@
                     <img src="google-scholar-icon.png" alt="Google Scholar">
                 </a>
             </div>
-        </section>
+        </div>
 
-        <section id="outreach" class="tab-content">
+        <div id="outreach" class="tab-content">
             <h2>Professional Development / Outreach</h2>
             <p><strong>Internships:</strong></p>
             <ul>
@@ -119,7 +119,7 @@
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer>
