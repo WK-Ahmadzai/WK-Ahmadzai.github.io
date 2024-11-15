@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="profile">
-                <img src="assets/images/profile.jpg" alt="Wali Khan Ahmadzai">
+                <img src="assets/images/Profile.jpg" alt="Wali Khan Ahmadzai">
                 <h1>Wali Khan Ahmadzai</h1>
                 <p>Master’s Student in Agricultural Economics<br>University of Tsukuba, Japan</p>
                 <a href="#contact" class="btn">Contact Me</a>
