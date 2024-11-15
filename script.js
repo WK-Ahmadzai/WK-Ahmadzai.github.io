@@ -1,36 +1,62 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all tab links and the content sections
-  const tabs = document.querySelectorAll('nav ul li a');
-  const sections = document.querySelectorAll('div[id]');
+// Smooth Scrolling Functionality
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
 
-  // Loop through all tabs and add click event listener
-  tabs.forEach(tab => {
-    tab.addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent the default link behavior
+        // Get the target section
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
 
-      // Remove the 'active' class from all tabs
-      tabs.forEach(t => t.classList.remove('active'));
+        // Scroll to the section
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
 
-      // Add 'active' class to the clicked tab
-      tab.classList.add('active');
-
-      // Hide all sections
-      sections.forEach(section => {
-        section.style.display = 'none';
-      });
-
-      // Get the ID of the section to display
-      const targetId = tab.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      
-      // Show the selected section
-      if (targetSection) {
-        targetSection.style.display = 'block';
-      }
+        // Highlight the active tab
+        document.querySelectorAll('nav ul li a').forEach(item => {
+            item.classList.remove('active');
+        });
+        this.classList.add('active');
     });
-  });
+});
 
-  // Set the first tab as active and display its content by default
-  tabs[0].classList.add('active');
-  sections[0].style.display = 'block';
+// Highlight the Current Section on Scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100; // Adjust offset for navbar height
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+        ) {
+            // Update the active class in the navigation bar
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === sectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
+// Sticky Header on Scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
+// Contact Button Interaction
+document.querySelector('.contact-button')?.addEventListener('click', () => {
+    alert('Thank you for reaching out! I will get back to you soon.');
 });
