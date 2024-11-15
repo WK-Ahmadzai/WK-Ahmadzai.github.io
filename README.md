@@ -12,7 +12,7 @@
             <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
             <nav class="tabs-nav">
                 <ul>
-                    <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                    <li><a href="#" class="tab-link active" data-tab="about">About</a></li>
                     <li><a href="#" class="tab-link" data-tab="work">Work Experience</a></li>
                     <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
                     <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
