@@ -8,28 +8,27 @@
 </head>
 <body>
     <header>
-        <div class="header-wrapper">
-            <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
-            <nav class="tabs-nav">
-                <ul>
-                    <li><a href="#" class="tab-link" data-tab="about">About</a></li>
-                    <li><a href="#" class="tab-link" data-tab="work">Work Experience</a></li>
-                    <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
-                    <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
-                    <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
-                    <li><a href="#" class="tab-link" data-tab="outreach">Professional Development</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Wali Khan Ahmadzai's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                <li><a href="#" class="tab-link" data-tab="work">Work Experience/Teaching</a></li>
+                <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
+                <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
+                <li><a href="#" class="tab-link" data-tab="contact">Contact Me</a></li>
+                <li><a href="#" class="tab-link" data-tab="outreach">Professional Development/Outreach</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div id="about" class="tab-content active">
+        <div id="about" class="tab-content">
             <h2>About Me</h2>
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
+                <p><strong>Name:</strong> Wali Khan Ahmadzai</p>
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
+                <p><strong>Email:</strong> ah.walikhan@gmail.com</p>
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -75,14 +74,30 @@
 
         <div id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
-            <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
+            <p><strong>Name:</strong> Wali Khan Ahmadzai</p>
+            <p><strong>Education:</strong></p>
+            <ul>
+                <li><strong>MSc. Agricultural Economics</strong>, University of Tsukuba, Japan (2023 - 2025)</li>
+                <li><strong>BSc. Agricultural Economics and Extension</strong>, Paktia University, Afghanistan (2015 - 2018)</li>
+            </ul>
+            <p><strong>Contact Information:</strong></p>
+            <ul>
+                <li>Email: ah.walikhan@gmail.com</li>
+                <li>Phone: [Insert your phone number]</li>
+            </ul>
+            <p><strong>Work Experience:</strong></p>
+            <ul>
+                <li>Teaching Assistant, Shaikh Zayed University, Afghanistan (2019 - 2022)</li>
+                <li>Research Assistant, University of Tsukuba, Japan (2022 - Present)</li>
+            </ul>
         </div>
 
         <div id="contact" class="tab-content">
             <h2>Contact Me</h2>
             <p>If you would like to get in touch with me, please use the contact information below:</p>
             <ul>
-                <li><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</li>
+                <li><strong>Email:</strong> ah.walikhan@gmail.com</li>
+                <li><strong>Phone:</strong> [Insert your phone number]</li>
             </ul>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank">
@@ -123,7 +138,6 @@
     </main>
 
     <footer>
-        <div class="footer-line"></div>
         <p>© 2024 Wali Khan Ahmadzai</p>
     </footer>
 
