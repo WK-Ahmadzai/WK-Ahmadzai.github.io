@@ -11,9 +11,9 @@ body {
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
-    min-height: 100vh; /* Ensure the footer stays at the bottom */
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
 }
 
 /* Header */
@@ -84,11 +84,16 @@ header {
 
 /* Footer */
 footer {
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center;
+    position: fixed; /* Fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 10px 0;
+    font-size: 0.8rem; /* Smaller text size */
+    z-index: 10; /* Keep footer above other content */
 }
 
 .footer-line {
@@ -96,11 +101,6 @@ footer {
     height: 3px;
     background-color: #000;
     margin-top: 20px;
-}
-
-footer p {
-    font-size: 0.8rem; /* Smaller text size */
-    margin-top: 5px;
 }
 
 /* Link Styling for CV Download */
