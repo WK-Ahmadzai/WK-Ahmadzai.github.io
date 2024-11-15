@@ -26,3 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('about').style.display = 'block';
     document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
 });
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
