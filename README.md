@@ -1,7 +1,13 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <h1>Wali Khan Ahmadzai's Portfolio</h1>
+        <h1>Wali Khan Ahmadzai</h1>
         <nav>
             <ul>
                 <li><a href="#" class="tab-link" data-tab="about">About</a></li>
