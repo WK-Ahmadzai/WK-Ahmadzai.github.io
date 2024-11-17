@@ -1,28 +1,40 @@
-// Wait for the document to load
-document.addEventListener('DOMContentLoaded', function () {
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
+// Handle tab switching with enhancements
+document.querySelectorAll('.tab-link').forEach(tabLink => {
+    tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
 
-    // Function to show the content of the clicked tab
-    function showTabContent(tab) {
-        tabContents.forEach(content => content.classList.remove('active')); // Hide all content
-        tabLinks.forEach(link => link.classList.remove('active')); // Remove active class from all links
-
-        // Show content of the clicked tab and mark the link as active
-        const tabContent = document.getElementById(tab);
-        tabContent.classList.add('active');
-        document.querySelector(`.tab-link[data-tab="${tab}"]`).classList.add('active');
-    }
-
-    // Add click event listeners to each tab link
-    tabLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const tabId = event.target.getAttribute('data-tab');
-            showTabContent(tabId);
+        // Hide all tab content sections
+        document.querySelectorAll('.tab-content').forEach(tabContent => {
+            tabContent.classList.remove('active');
+            tabContent.setAttribute('aria-hidden', 'true'); // Accessibility enhancement
         });
-    });
 
-    // Initially show the content of the first tab (About)
-    showTabContent('about');
+        // Show the clicked tab's content
+        const tabId = this.getAttribute('data-tab');
+        const targetTabContent = document.getElementById(tabId);
+        targetTabContent.classList.add('active');
+        targetTabContent.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
+
+        // Highlight the active tab
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.classList.remove('active');
+            link.setAttribute('aria-selected', 'false'); // Accessibility enhancement
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true'); // Accessibility enhancement
+    });
+});
+
+// Default to show the "About" section when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    const defaultTab = document.getElementById('about');
+    const defaultTabLink = document.querySelector('.tab-link[data-tab="about"]');
+
+    // Ensure the default tab is active
+    if (defaultTab && defaultTabLink) {
+        defaultTab.classList.add('active');
+        defaultTab.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
+        defaultTabLink.classList.add('active');
+        defaultTabLink.setAttribute('aria-selected', 'true'); // Accessibility enhancement
+    }
 });
