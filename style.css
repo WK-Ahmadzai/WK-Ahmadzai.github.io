@@ -1,121 +1,176 @@
-/* General Body and Layout */
-body {
+/* Basic Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background-color: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    position: fixed; /* Fixed position for the header */
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
 }
 
-/* Header Wrapper */
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Portfolio Name */
 .portfolio-name {
-    font-size: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight text shadow */
 }
 
-/* Tab Navigation */
 .tabs-nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    gap: 20px;
 }
 
-.tabs-nav li {
-    margin: 0 10px;
-}
-
-.tabs-nav a {
+.tabs-nav li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    font-size: 1rem;
     padding: 5px 10px;
-    display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.tabs-nav a:hover {
-    background-color: #444;
-    transform: scale(1.05);
+.tabs-nav li a:hover {
+    color: #00acc1;
+    transform: scale(1.1); /* Slight scale effect */
 }
 
-/* Active Tab Styling */
-.tabs-nav a.active {
-    background-color: #666;
-}
-
-/* Main Content Area */
-main {
-    flex-grow: 1;
-    margin-top: 80px; /* Offset for fixed header */
-    padding: 20px;
-    display: block;
-    overflow-y: auto;
+.tabs-nav li a.active {
+    border-bottom: 2px solid #fff; /* Underline active tab */
+    font-weight: bold;
 }
 
 /* Tab Content */
 .tab-content {
-    display: none; /* Hide all tab content by default */
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(-10px); /* Slight upward position */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide */
 }
 
-/* Active Tab Content */
 .tab-content.active {
-    display: block; /* Show the content of the active tab */
+    display: block;
+    opacity: 1; /* Fully visible when active */
+    transform: translateY(0); /* Normal position */
+    padding-top: 80px; /* Space for fixed header */
 }
 
-/* Footer Styling */
+/* Boxes for Content */
+.about-box,
+.bio-box,
+.work-box,
+.research-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth effects */
+}
+
+.about-box:hover,
+.bio-box:hover,
+.work-box:hover,
+.research-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #00bcd4; /* Add border for emphasis */
+}
+
+/* Footer */
 footer {
+    margin-top: auto; /* Push footer to the bottom */
+    text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px 0;
-    position: fixed; /* Fixed position for the footer */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Adjust font size for clarity */
 }
 
-/* Media Query for Responsive Design */
+.footer-line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.8rem; /* Smaller text size */
+    margin-top: 5px;
+}
+
+/* Link Styling for CV Download */
+.cv-link {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cv-link:hover {
+    background-color: #0097a7;
+    transform: translateY(-3px); /* Slight lift */
+}
+
+/* Social Media Icons */
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-media img:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    .header-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
     .tabs-nav ul {
         flex-direction: column;
         align-items: center;
     }
-
-    .tabs-nav li {
-        margin: 5px 0;
-    }
-
-    .header-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .portfolio-name {
+        font-size: 1.5rem; /* Adjust for smaller screens */
     }
 }
