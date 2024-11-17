@@ -41,13 +41,6 @@
                     <p>I hold a Master’s degree in Agricultural Economics from the University of Tsukuba, Japan. Previously, I served as a lecturer at Shaikh Zayed University, Afghanistan, where I contributed to the academic community for three years, honing my skills in teaching and research.</p>
                     <p>Currently in my second year of graduate studies, my research centers on the intersection of Agricultural Economics and Behavioral Economics, enriched by coursework in Sustainability, Development Economics, and Environmental Economics.</p>
                     <p>I am actively seeking Ph.D. opportunities to engage in multidisciplinary research that fosters impactful change in Agricultural Economics and related fields. My ultimate goal is to leverage my expertise to support sustainable development and economic resilience.</p>
-                    <p><strong>Research Interests:</strong></p>
-                    <ul>
-                        <li>Sustainable Energy Development</li>
-                        <li>Policy and Economic Implications of Renewable Energy in Afghanistan</li>
-                        <li>Development Economics and Women's Empowerment</li>
-                        <li>Impact of Public Policies on Health and Labor Outcomes in Afghanistan</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -77,11 +70,6 @@
                 <li>Empowering Afghan Women through the Saffron Industry (Submission Stage)</li>
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
-            </ul>
-            <p><strong>Research Projects:</strong></p>
-            <ul>
-                <li>Sustainable Energy Development in Afghanistan: Policy and Economic Implications</li>
-                <li>Impact of Public Policies on Health and Labor Outcomes in Afghanistan, focusing on Gender Disparities and Women's Marginalization</li>
             </ul>
         </div>
 
@@ -131,18 +119,14 @@
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
-            <p><strong>Professional Experiences:</strong></p>
-            <ul>
-                <li><strong>Selected for JICA-UNDP Collaborative Workshop on Social Cohesion and Inclusive Basic Service Provision in Afghanistan (July 19-20, 2024), Tokyo, Japan</strong></li>
-            </ul>
         </div>
     </main>
 
     <footer>
         <div class="footer-line"></div>
-        <p>© 2024 Wali Khan Ahmadzai. All Rights Reserved.</p>
+        <p>© 2024 Wali Khan Ahmadzai</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
