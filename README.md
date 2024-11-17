@@ -14,7 +14,7 @@
             <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
             <nav class="tabs-nav" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#" class="tab-link" data-tab="about" aria-current="page">About</a></li>
+                    <li><a href="#" class="tab-link active" data-tab="about">About</a></li>
                     <li><a href="#" class="tab-link" data-tab="work">Work Experience</a></li>
                     <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
                     <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
@@ -28,32 +28,32 @@
     <main>
         <section id="about" class="tab-content active">
             <h2>About Me</h2>
-            <!-- Content here -->
+            <p>Here is some introductory content about Wali Khan Ahmadzai.</p>
         </section>
 
         <section id="work" class="tab-content">
             <h2>Work Experience & Teaching</h2>
-            <!-- Content here -->
+            <p>Details of my professional journey, teaching experience, and contributions to the field.</p>
         </section>
 
         <section id="research" class="tab-content">
             <h2>Research</h2>
-            <!-- Content here -->
+            <p>Research topics I have worked on, including publications and ongoing projects.</p>
         </section>
 
         <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
-            <!-- Content here -->
+            <p>A detailed CV showcasing my education, skills, and professional background.</p>
         </section>
 
         <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
-            <!-- Content here -->
+            <p>Feel free to reach out to me through the contact form or via email.</p>
         </section>
 
         <section id="outreach" class="tab-content">
             <h2>Professional Development / Outreach</h2>
-            <!-- Content here -->
+            <p>Details about my work in outreach programs and professional development initiatives.</p>
         </section>
     </main>
 
