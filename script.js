@@ -1,28 +1,28 @@
-// Handle tab switching
-document.querySelectorAll('.tab-link').forEach(tabLink => {
-    tabLink.addEventListener('click', function(event) {
-        event.preventDefault();
+// JavaScript to manage header and footer behavior
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+const footer = document.getElementById('footer');
 
-        // Hide all tab content sections
-        document.querySelectorAll('.tab-content').forEach(tabContent => {
-            tabContent.style.display = 'none';
-        });
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Show the clicked tab's content
-        const tabId = this.getAttribute('data-tab');
-        const targetTabContent = document.getElementById(tabId);
-        targetTabContent.style.display = 'block';
-
-        // Highlight the active tab
-        document.querySelectorAll('.tab-link').forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
-    });
+    if (scrollTop > lastScrollTop) {
+        // Scrolling Down
+        header.classList.add('hidden');
+        footer.classList.add('stretched');
+    } else {
+        // Scrolling Up
+        header.classList.remove('hidden');
+        footer.classList.remove('stretched');
+    }
+    lastScrollTop = scrollTop;
 });
 
-// Default to show the "About" section when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('about').style.display = 'block';
-    document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
+// Highlight tab on hover
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('selected'));
+        tab.classList.add('selected');
+    });
 });
