@@ -5,7 +5,8 @@ body {
     background: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the body takes the full height */
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header Styling */
@@ -13,22 +14,27 @@ header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    position: sticky;  /* Makes header sticky */
-    top: 0;  /* Sticks to top */
-    z-index: 1000;  /* Keeps it above other content */
-    transition: all 0.3s ease; /* Smooth transition for effects */
+    position: fixed; /* Fixed position for the header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Wrapper */
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Portfolio Name */
 .portfolio-name {
     font-size: 24px;
 }
 
+/* Tab Navigation */
 .tabs-nav ul {
     list-style: none;
     padding: 0;
@@ -45,19 +51,42 @@ header {
     color: white;
     font-weight: bold;
     padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tabs-nav a:hover,
-.tabs-nav a:focus {
+.tabs-nav a:hover {
     background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Active Tab Styling */
+.tabs-nav a.active {
+    background-color: #666;
 }
 
 /* Main Content Area */
 main {
     flex-grow: 1;
-    margin-top: 70px;  /* Adds space below fixed header */
+    margin-top: 80px; /* Offset for fixed header */
     padding: 20px;
-    overflow-x: hidden;  /* Prevents horizontal scrolling */
+    display: block;
+    overflow-y: auto;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none; /* Hide all tab content by default */
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Tab Content */
+.tab-content.active {
+    display: block; /* Show the content of the active tab */
 }
 
 /* Footer Styling */
@@ -66,47 +95,12 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: sticky; /* Makes footer sticky */
-    bottom: 0; /* Sticks to the bottom of the page */
+    position: fixed; /* Fixed position for the footer */
+    bottom: 0;
+    left: 0;
     width: 100%;
-    margin-top: auto;
-    transition: all 0.3s ease; /* Smooth transition for effects */
-}
-
-/* Adding a shadow to the header and footer for dynamic feel */
-header, footer {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Hover Effect on Mouse Movement (add dynamism) */
-body:hover {
-    background: #e2e2e2;
-    transition: background 0.3s ease;
-}
-
-/* Dynamic Hover Effect on Links */
-.tabs-nav a:hover {
-    background-color: #555;
-    transform: scale(1.1); /* Slight scaling effect */
-}
-
-/* Active Tab Effect */
-.tabs-nav .active {
-    background-color: #666;
-}
-
-/* Scrollable Content with Smooth Scroll */
-main {
-    overflow-y: scroll;
-    max-height: 80vh;  /* Makes the main section scrollable */
-    padding-right: 10px;  /* Prevents content from hiding behind the scrollbar */
-}
-
-/* Add some hover effects to the content sections */
-main section:hover {
-    background-color: #ddd;
-    transform: translateY(-5px); /* Elevate the section on hover */
-    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Media Query for Responsive Design */
