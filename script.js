@@ -1,40 +1,17 @@
-// Handle tab switching with enhancements
-document.querySelectorAll('.tab-link').forEach(tabLink => {
-    tabLink.addEventListener('click', function(event) {
-        event.preventDefault();
+// Mouse Move Effect to Create Interactive Experience
+document.addEventListener('mousemove', function(e) {
+    let header = document.querySelector('header');
+    let footer = document.querySelector('footer');
 
-        // Hide all tab content sections
-        document.querySelectorAll('.tab-content').forEach(tabContent => {
-            tabContent.classList.remove('active');
-            tabContent.setAttribute('aria-hidden', 'true'); // Accessibility enhancement
-        });
+    // Move header and footer based on mouse position
+    let mouseX = e.clientX;
+    let mouseY = e.clientY;
 
-        // Show the clicked tab's content
-        const tabId = this.getAttribute('data-tab');
-        const targetTabContent = document.getElementById(tabId);
-        targetTabContent.classList.add('active');
-        targetTabContent.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
+    // Example of dynamic changes on mouse movement
+    header.style.transform = `translateX(${mouseX / 10}px) translateY(${mouseY / 15}px)`;
+    footer.style.transform = `translateX(${mouseX / 15}px) translateY(${mouseY / 20}px)`;
 
-        // Highlight the active tab
-        document.querySelectorAll('.tab-link').forEach(link => {
-            link.classList.remove('active');
-            link.setAttribute('aria-selected', 'false'); // Accessibility enhancement
-        });
-        this.classList.add('active');
-        this.setAttribute('aria-selected', 'true'); // Accessibility enhancement
-    });
-});
-
-// Default to show the "About" section when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-    const defaultTab = document.getElementById('about');
-    const defaultTabLink = document.querySelector('.tab-link[data-tab="about"]');
-
-    // Ensure the default tab is active
-    if (defaultTab && defaultTabLink) {
-        defaultTab.classList.add('active');
-        defaultTab.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
-        defaultTabLink.classList.add('active');
-        defaultTabLink.setAttribute('aria-selected', 'true'); // Accessibility enhancement
-    }
+    // Add subtle opacity effect based on mouse position
+    header.style.opacity = 1 - (mouseY / window.innerHeight);
+    footer.style.opacity = 1 - (mouseY / window.innerHeight);
 });
