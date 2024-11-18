@@ -11,32 +11,32 @@ body {
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background-color: rgba(0, 188, 212, 0.8); /* Transparent light color */
+    background-color: #00bcd4;
     color: #fff;
     padding: 15px 20px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #00acc1;
+    z-index: 999;
 }
 
 .header-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.portfolio-name {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .tabs-nav ul {
@@ -49,7 +49,6 @@ header {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease;
 }
 
 .tabs-nav li a:hover {
@@ -59,19 +58,19 @@ header {
 /* Tab Content */
 .tab-content {
     display: none;
-    padding: 20px;
-    flex: 1;
 }
 
 .tab-content.active {
     display: block;
+    padding-top: 80px; /* Space for fixed header */
 }
 
 .about-box,
+.bio-box,
 .work-box,
 .research-box {
     padding: 20px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -80,34 +79,46 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #00bcd4;
     margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-    color: #fff;
+    margin-top: auto; /* Push footer to the bottom */
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-line {
     width: 100%;
-    border-top: 2px solid #444;
+    height: 3px;
+    background-color: #000;
+    margin-top: 20px;
 }
 
 footer p {
-    margin: 10px 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Smaller text size */
+    margin-top: 5px;
 }
 
-.social-media {
-    margin: 10px 0;
+/* Link Styling for CV Download */
+.cv-link {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
+.cv-link:hover {
+    background-color: #0097a7;
+}
+
+/* Social Media Icons */
 .social-media a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .social-media img {
@@ -119,10 +130,10 @@ footer p {
 @media (max-width: 768px) {
     .header-wrapper {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-
     .tabs-nav ul {
         flex-direction: column;
+        align-items: center;
     }
 }
