@@ -1,139 +1,28 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Handle tab switching
+document.querySelectorAll('.tab-link').forEach(tabLink => {
+    tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f8fb;
-    color: #333;
-    line-height: 1.6;
-    min-height: 100vh; /* Ensure the footer stays at the bottom */
-    display: flex;
-    flex-direction: column;
-}
+        // Hide all tab content sections
+        document.querySelectorAll('.tab-content').forEach(tabContent => {
+            tabContent.style.display = 'none';
+        });
 
-/* Header */
-header {
-    background-color: #00bcd4;
-    color: #fff;
-    padding: 15px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-}
+        // Show the clicked tab's content
+        const tabId = this.getAttribute('data-tab');
+        const targetTabContent = document.getElementById(tabId);
+        targetTabContent.style.display = 'block';
 
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        // Highlight the active tab
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
 
-.portfolio-name {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.tabs-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.tabs-nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.tabs-nav li a:hover {
-    color: #00acc1;
-}
-
-/* Tab Content */
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-    padding-top: 80px; /* Space for fixed header */
-}
-
-.about-box,
-.bio-box,
-.work-box,
-.research-box {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-.footer-line {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    margin-top: 20px;
-}
-
-footer p {
-    font-size: 0.8rem; /* Smaller text size */
-    margin-top: 5px;
-}
-
-/* Link Styling for CV Download */
-.cv-link {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.cv-link:hover {
-    background-color: #0097a7;
-}
-
-/* Social Media Icons */
-.social-media a {
-    margin: 0 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-    .tabs-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+// Default to show the "About" section when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('about').style.display = 'block';
+    document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
+});
