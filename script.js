@@ -1,17 +1,17 @@
 // Handle tab switching
 document.querySelectorAll('.tab-link').forEach(tabLink => {
-    tabLink.addEventListener('click', function(event) {
+    tabLink.addEventListener('click', function (event) {
         event.preventDefault();
 
         // Hide all tab content sections
         document.querySelectorAll('.tab-content').forEach(tabContent => {
-            tabContent.style.display = 'none';
+            tabContent.classList.remove('active');
         });
 
         // Show the clicked tab's content
         const tabId = this.getAttribute('data-tab');
         const targetTabContent = document.getElementById(tabId);
-        targetTabContent.style.display = 'block';
+        targetTabContent.classList.add('active');
 
         // Highlight the active tab
         document.querySelectorAll('.tab-link').forEach(link => {
@@ -23,6 +23,7 @@ document.querySelectorAll('.tab-link').forEach(tabLink => {
 
 // Default to show the "About" section when the page loads
 window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('about').style.display = 'block';
+    const defaultTab = document.getElementById('about');
+    defaultTab.classList.add('active');
     document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
 });
