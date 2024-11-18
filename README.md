@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wali Khan Ahmadzai's professional portfolio showcasing academic achievements, research, and work experience in Agricultural Economics.">
+    <meta name="keywords" content="Wali Khan Ahmadzai, Agricultural Economics, Research, Work Experience, CV, Contact">
     <title>Wali Khan Ahmadzai's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,9 +12,9 @@
     <header>
         <div class="header-wrapper">
             <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
-            <nav class="tabs-nav">
+            <nav class="tabs-nav" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                    <li><a href="#" class="tab-link" data-tab="about" aria-current="page">About</a></li>
                     <li><a href="#" class="tab-link" data-tab="work">Work Experience</a></li>
                     <li><a href="#" class="tab-link" data-tab="research">Research</a></li>
                     <li><a href="#" class="tab-link" data-tab="cv">CV</a></li>
@@ -24,7 +26,7 @@
     </header>
 
     <main>
-        <div id="about" class="tab-content active">
+        <section id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
@@ -43,9 +45,9 @@
                     <p>I am actively seeking Ph.D. opportunities to engage in multidisciplinary research that fosters impactful change in Agricultural Economics and related fields. My ultimate goal is to leverage my expertise to support sustainable development and economic resilience.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="work" class="tab-content">
+        <section id="work" class="tab-content">
             <h2>Work Experience & Teaching</h2>
             <p><strong>Teaching Assistant</strong>, <a href="https://szu.edu.af/en" target="_blank">Shaikh Zayed University</a>, Afghanistan (April 2019 - March 2022)</p>
             <p><strong>Research Assistant</strong>, University of Tsukuba, Japan (2022-Present)</p>
@@ -57,9 +59,9 @@
                 <li>AgEc630 - Applied Econometrics (Spring 2021)</li>
                 <li>Econometrics Using R Programming (2023 - Present)</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="research" class="tab-content">
+        <section id="research" class="tab-content">
             <h2>Research</h2>
             <p><strong>Publications:</strong></p>
             <ul>
@@ -71,19 +73,29 @@
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="cv" class="tab-content">
+        <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
-        </div>
+        </section>
 
-        <div id="contact" class="tab-content">
+        <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
-            <p>If you would like to get in touch with me, please use the contact information below:</p>
-            <ul>
-                <li><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</li>
-            </ul>
+            <p>If you would like to get in touch with me, please use the contact information below or fill out the form:</p>
+            <form action="mailto:ah.walikhan@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank">
                     <img src="linkedin-icon.png" alt="LinkedIn">
@@ -101,9 +113,9 @@
                     <img src="google-scholar-icon.png" alt="Google Scholar">
                 </a>
             </div>
-        </div>
+        </section>
 
-        <div id="outreach" class="tab-content">
+        <section id="outreach" class="tab-content">
             <h2>Professional Development / Outreach</h2>
             <p><strong>Internships:</strong></p>
             <ul>
@@ -119,7 +131,7 @@
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
-        </div>
+        </section>
     </main>
 
     <footer>
