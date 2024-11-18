@@ -10,8 +10,7 @@ document.querySelectorAll('.tab-link').forEach(tabLink => {
 
         // Show the clicked tab's content
         const tabId = this.getAttribute('data-tab');
-        const targetTabContent = document.getElementById(tabId);
-        targetTabContent.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
 
         // Highlight the active tab
         document.querySelectorAll('.tab-link').forEach(link => {
@@ -23,7 +22,6 @@ document.querySelectorAll('.tab-link').forEach(tabLink => {
 
 // Default to show the "About" section when the page loads
 window.addEventListener('DOMContentLoaded', () => {
-    const defaultTab = document.getElementById('about');
-    defaultTab.classList.add('active');
+    document.getElementById('about').classList.add('active');
     document.querySelector('.tab-link[data-tab="about"]').classList.add('active');
 });
