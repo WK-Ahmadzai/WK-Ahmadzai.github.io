@@ -31,7 +31,7 @@
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
+                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -77,17 +77,7 @@
 
         <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
-            <p>If you would like to get in touch with me, please use the contact information below or fill out the form:</p>
-            <form action="mailto:ah.walikhan@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
+            <p>If you would like to get in touch with me, please use the contact information below:</p>
                 <button type="submit">Send</button>
         <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
@@ -126,12 +116,13 @@
                 <li>Member, Agricultural Economics Society of Japan (2023 - Present)</li>
                 <li>Member, Japan Food System Society (2023 - Present)</li>
             </ul>
-            <p><strong>Presentations:</strong></p>
+            <p><strong>Conference Presentations:</strong></p>
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
         </section>
     </main>
+
 
     <footer>
         <div class="footer-line"></div>
