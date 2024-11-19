@@ -168,17 +168,38 @@ footer {
     padding: 10px 0;
     font-size: 0.9rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Footer part of normal page flow */
-    margin-top: auto; /* Pushes it to the bottom of the screen if needed */
-    width: 100%; /* Make it span the full width of the page */
+    position: fixed; /* Footer fixed at the bottom */
+    bottom: 0; /* Position it at the bottom of the page */
+    left: 0; /* Ensure it spans across the screen */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure it stays on top of content */
 }
 
-/* Optional: Ensure the page does not overflow */
+/* Main content wrapper should take all available space */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    padding-bottom: 50px; /* Leave space for the footer */
 }
+
+/* Content of the page should be flexible to allow for footer positioning */
+main {
+    flex: 1; /* Makes the main content take available space */
+}
+
+/* Optional: Style for the tabs or content sections */
+.tabs-nav {
+    padding-top: 50px; /* Space above the navigation if needed */
+}
+
+/* Ensuring no content overflows below the footer */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 
 .footer-line {
     width: 100%;
