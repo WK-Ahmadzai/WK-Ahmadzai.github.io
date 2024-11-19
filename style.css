@@ -16,18 +16,25 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* Initial Header styling */
 header {
     background-color: #00bcd4;
     color: #fff;
-    padding: 15px 20px;
+    padding: 15px 20px; /* Initial padding */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease; /* Smooth transition for padding change */
 }
+
+/* Header when scrolled */
+header.scrolled {
+    padding: 5px 20px; /* Reduced padding when scrolled */
+}
+
 
 .header-wrapper {
     display: flex;
