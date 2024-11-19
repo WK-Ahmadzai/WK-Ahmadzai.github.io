@@ -183,7 +183,7 @@ footer {
     padding: 10px 0;
     font-size: 0.9rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    position: relative; /* Footer part of normal page flow */
+    position: fixed; /* Footer part of normal page flow */
     margin-top: auto; /* Pushes it to the bottom of the screen if needed */
     width: 100%; /* Make it span the full width of the page */
 }
