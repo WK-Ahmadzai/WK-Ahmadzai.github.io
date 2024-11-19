@@ -79,7 +79,14 @@ header {
     transform: translateY(0);
     padding-top: 80px; 
 }
+/* Ensure that the tab content is hidden when inactive */
+.tab-content {
+    display: none;
+}
 
+.tab-content.active {
+    display: block; /* Show the active tab content */
+}
 /* Boxes for Content */
 .about-box,
 .bio-box,
