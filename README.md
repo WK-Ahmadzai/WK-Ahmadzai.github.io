@@ -31,7 +31,7 @@
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
+                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -65,23 +65,35 @@
             <h2>Research</h2>
             <p><strong>Publications:</strong></p>
             <ul>
-                <li>Ahmadzai, W. K., & Aryobi, H. G. (2021). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
+                <li>Ahmadzai, W. K., & Aryobi, H. G. (2023). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
             </ul>
             <p><strong>Work in Progress:</strong></p>
             <ul>
-                <li>Empowering Afghan Women through the Saffron Industry (Under Review)</li>
+                <li>Empowering Afghan Women through the Saffron Industry (Submission Stage)</li>
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
             </ul>
         </section>
 
-        <section id="contact" class="tab-content">
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch with me, please use the contact information below:</p>
         <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
         </section>
+
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch with me, please use the contact information below or fill out the form:</p>
+            <form action="mailto:ah.walikhan@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
             </form>
             <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
             <div class="social-media">
@@ -107,21 +119,20 @@
             <h2>Professional Development / Outreach</h2>
             <p><strong>Internships:</strong></p>
             <ul>
-                <li><strong>Intern</strong>, Japan Space System, Utilized satellite data and remote sensing techniques (Summer 2023)</li>
-                <li><strong>Intern</strong>, GPSS Group, I collaborated with the marketing intelligence team (Summer 2024)</li>
+                <li><strong>Intern</strong>, Japan Agricultural Economics Society (Summer 2023)</li>
+                <li><strong>Intern</strong>, Global Partnership for Saffron Producers (Summer 2024)</li>
             </ul>
             <p><strong>Memberships:</strong></p>
             <ul>
-                <li>Member, Agricultural Economics Society of Japan (2023 - Present)</li>
-                <li>Member, Japan Food System Society (2023 - Present)</li>
+                <li>Member, Agricultural Economics Society of Japan</li>
+                <li>Member, Afghan Society for Agricultural Development</li>
             </ul>
-            <p><strong>Conference Presentations:</strong></p>
+            <p><strong>Presentations:</strong></p>
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
         </section>
     </main>
-
 
     <footer>
         <div class="footer-line"></div>
