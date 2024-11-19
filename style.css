@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none; /* Hide the default cursor */
 }
 
 /* Body */
@@ -11,22 +12,35 @@ body {
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
-    min-height: 100vh; /* Ensure the footer stays at the bottom */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent interference with elements */
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, transform 0.1s ease;
+    z-index: 1000;
+}
+
+.cursor.hover {
+    width: 20px;
+    height: 20px;
 }
 
 /* Header */
 header {
     background-color: #00bcd4;
     color: #fff;
-    padding: 15px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .header-wrapper {
@@ -60,24 +74,17 @@ header {
     transform: scale(1.1); /* Slight scale effect */
 }
 
-.tabs-nav li a.active {
-    border-bottom: 2px solid #fff; /* Underline active tab */
-    font-weight: bold;
-}
-
 /* Tab Content */
 .tab-content {
-    display: none;
     opacity: 0; /* Hidden by default */
     transform: translateY(-10px); /* Slight upward position */
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide */
 }
 
 .tab-content.active {
-    display: block;
     opacity: 1; /* Fully visible when active */
     transform: translateY(0); /* Normal position */
-    padding-top: 80px; /* Space for fixed header */
+    padding: 20px;
 }
 
 /* Boxes for Content */
@@ -110,12 +117,12 @@ header {
 
 /* Footer */
 footer {
-    margin-top: auto; /* Push footer to the bottom */
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     font-size: 0.9rem; /* Adjust font size for clarity */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .footer-line {
