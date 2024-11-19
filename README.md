@@ -32,7 +32,7 @@
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic" style="max-width: 250px; height: auto;">
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
+
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -83,7 +83,9 @@
 
         <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
-            <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
+            <p><strong>Email:</strong> 
+            <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a>
+            <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a>
             <p><strong>Social Media:</strong></p>
             <ul>
                 <li><a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
