@@ -11,7 +11,7 @@ body {
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
-    min-height: 100vh; /* Ensure the footer stays at the bottom */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -26,7 +26,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-wrapper {
@@ -38,7 +38,7 @@ header {
 .portfolio-name {
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight text shadow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .tabs-nav ul {
@@ -52,32 +52,32 @@ header {
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .tabs-nav li a:hover {
     color: #00acc1;
-    transform: scale(1.1); /* Slight scale effect */
+    transform: scale(1.1);
 }
 
 .tabs-nav li a.active {
-    border-bottom: 2px solid #fff; /* Underline active tab */
+    border-bottom: 2px solid #fff;
     font-weight: bold;
 }
 
 /* Tab Content */
 .tab-content {
     display: none;
-    opacity: 0; /* Hidden by default */
-    transform: translateY(-10px); /* Slight upward position */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .tab-content.active {
     display: block;
-    opacity: 1; /* Fully visible when active */
-    transform: translateY(0); /* Normal position */
-    padding-top: 80px; /* Space for fixed header */
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 80px; 
 }
 
 /* Boxes for Content */
@@ -89,15 +89,15 @@ header {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-box:hover,
 .bio-box:hover,
 .work-box:hover,
 .research-box:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .profile-pic {
@@ -105,17 +105,17 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 3px solid #00bcd4; /* Add border for emphasis */
+    border: 3px solid #00bcd4;
 }
 
 /* Footer */
 footer {
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
     text-align: center;
     background-color: #333;
     color: white;
     padding: 10px 0;
-    font-size: 0.9rem; /* Adjust font size for clarity */
+    font-size: 0.9rem;
 }
 
 .footer-line {
@@ -126,7 +126,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.8rem; /* Smaller text size */
+    font-size: 0.8rem;
     margin-top: 5px;
 }
 
@@ -137,12 +137,12 @@ footer p {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cv-link:hover {
     background-color: #0097a7;
-    transform: translateY(-3px); /* Slight lift */
+    transform: translateY(-3px);
 }
 
 /* Social Media Icons */
@@ -153,11 +153,11 @@ footer p {
 .social-media img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease;
 }
 
 .social-media img:hover {
-    transform: scale(1.2); /* Enlarge on hover */
+    transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -171,7 +171,6 @@ footer p {
         align-items: center;
     }
     .portfolio-name {
-        font-size: 1.5rem; /* Adjust for smaller screens */
+        font-size: 1.5rem;
     }
 }
-
