@@ -30,9 +30,9 @@
         <section id="about" class="tab-content active">
             <h2>About Me</h2>
             <div class="about-box">
-                <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
+                <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic" style="max-width: 250px; height: auto;">
                 <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a>, Japan</p>
-                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
+                <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
                 <p><strong>Education:</strong></p>
                 <ul>
                     <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (2023-2025, expected)</li>
@@ -66,7 +66,7 @@
             <h2>Research</h2>
             <p><strong>Publications:</strong></p>
             <ul>
-                <li>Ahmadzai, W. K., & Aryobi, H. G. (2023). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
+                <li>Ahmadzai, W. K., & Aryobi, H. G. (2021). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
             </ul>
             <p><strong>Work in Progress:</strong></p>
             <ul>
@@ -83,59 +83,37 @@
 
         <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
-            <p>If you would like to get in touch with me, please use the contact information below or fill out the form:</p>
-            <form action="mailto:ah.walikhan@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-            <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" rel="noopener noreferrer">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank" rel="noopener noreferrer">
-                    <img src="researchgate-icon.png" alt="ResearchGate">
-                </a>
-                <a href="https://x.com/WKAhmadzai1" target="_blank" rel="noopener noreferrer">
-                    <img src="x-icon.png" alt="X">
-                </a>
-                <a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank" rel="noopener noreferrer">
-                    <img src="facebook-icon.png" alt="Facebook">
-                </a>
-                <a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
-                    <img src="google-scholar-icon.png" alt="Google Scholar">
-                </a>
-            </div>
+            <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai@szu.edu.af</p>
+            <p><strong>Social Media:</strong></p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank" rel="noopener noreferrer">ResearchGate</a></li>
+                <li><a href="https://x.com/WKAhmadzai1" target="_blank" rel="noopener noreferrer">X</a></li>
+                <li><a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            </ul>
         </section>
 
         <section id="outreach" class="tab-content">
             <h2>Professional Development / Outreach</h2>
             <p><strong>Internships:</strong></p>
             <ul>
-                <li><strong>Intern</strong>, Japan Agricultural Economics Society (Summer 2023)</li>
-                <li><strong>Intern</strong>, Global Partnership for Saffron Producers (Summer 2024)</li>
+                <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
+                <li><strong>Intern atGPSS Group</strong>, I collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
             </ul>
             <p><strong>Memberships:</strong></p>
             <ul>
-                <li>Member, Agricultural Economics Society of Japan</li>
-                <li>Member, Afghan Society for Agricultural Development</li>
+           <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
+                <li><strong>Member</strong>, GJapan Food System Society (2023 - Present)</li>
             </ul>
-            <p><strong>Presentations:</strong></p>
+            <p><strong>Conference Presentations:</strong></p>
             <ul>
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer style="margin: 0; padding: 10px; text-align: center;">
         <p>&copy; 2024 Wali Khan Ahmadzai. All rights reserved.</p>
     </footer>
 
