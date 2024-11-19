@@ -81,11 +81,10 @@
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
         </section>
 
-        <section id="contact" class="tab-content">
-            <h2>Contact Me</h2>
             <p><strong>Email:</strong> 
-            <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a>
-            <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a>
+    <a href="mailto:ah.walikhan@gmail.com">ah.walikhan@gmail.com</a> | 
+    <a href="mailto:wk.ahmadzai.szu.edu.af">wk.ahmadzai.szu.edu.af</a>
+      </p>
             <p><strong>Social Media:</strong></p>
             <ul>
                 <li><a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -94,31 +93,29 @@
                 <li><a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                 <li><a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
             </ul>
-        </section>
+      <section id="outreach" class="tab-content">
+    <h2>Professional Development / Outreach</h2>
+    <p><strong>Internships:</strong></p>
+    <ul>
+        <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
+        <li><strong>Intern at GPSS Group</strong>, Collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
+    </ul>
+    <p><strong>Memberships:</strong></p>
+    <ul>
+        <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
+        <li><strong>Member</strong>, Japan Food System Society (2023 - Present)</li>
+    </ul>
+    <p><strong>Conference Presentations:</strong></p>
+    <ul>
+        <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
+    </ul>
+</section>
+</main>
 
-        <section id="outreach" class="tab-content">
-            <h2>Professional Development / Outreach</h2>
-            <p><strong>Internships:</strong></p>
-            <ul>
-                <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
-                <li><strong>Intern at GPSS Group</strong>, Collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
-            </ul>
-            <p><strong>Memberships:</strong></p>
-            <ul>
-           <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
-                <li><strong>Member</strong>, Japan Food System Society (2023 - Present)</li>
-            </ul>
-            <p><strong>Conference Presentations:</strong></p>
-            <ul>
-                <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
-            </ul>
-        </section>
-    </main>
+<footer style="margin: 0; padding: 10px; text-align: center;">
+    <p>&copy; 2024 Wali Khan Ahmadzai. All rights reserved.</p>
+</footer>
 
-    <footer style="margin: 0; padding: 10px; text-align: center;">
-        <p>&copy; 2024 Wali Khan Ahmadzai. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
