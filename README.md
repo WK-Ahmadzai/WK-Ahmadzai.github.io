@@ -78,7 +78,6 @@
         <section id="contact" class="tab-content">
             <h2>Contact Me</h2>
             <p>If you would like to get in touch with me, please use the contact information below:</p>
-                <button type="submit">Send</button>
         <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
