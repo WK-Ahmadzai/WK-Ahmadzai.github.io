@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wali Khan Ahmadzai's professional portfolio showcasing academic achievements, research, and work experience in Agricultural Economics.">
     <meta name="keywords" content="Wali Khan Ahmadzai, Agricultural Economics, Research, Work Experience, CV, Contact">
+    <meta name="author" content="Wali Khan Ahmadzai">
     <title>Wali Khan Ahmadzai's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,13 +31,13 @@
             <h2>About Me</h2>
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
-                <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
+                <p><strong>Current Position:</strong> Master's Degree Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a>, Japan</p>
                 <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
                 <p><strong>Education:</strong></p>
                 <ul>
-                    <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (2023-2025, expected)</li>
-                    <li><strong>BSc. Agricultural Economics and Extension</strong>, <a href="https://www.pu.edu.af/" target="_blank">Paktia University</a>, Afghanistan (2015-2018)</li>
-                    <li><strong>Non-degree Research Student</strong>, Agricultural Economics, <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a> (April 2022 - March 2023)</li>
+                    <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (2023-2025, expected)</li>
+                    <li><strong>BSc. Agricultural Economics and Extension</strong>, <a href="https://www.pu.edu.af/" target="_blank" rel="noopener noreferrer">Paktia University</a>, Afghanistan (2015-2018)</li>
+                    <li><strong>Non-degree Research Student</strong>, Agricultural Economics, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (April 2022 - March 2023)</li>
                 </ul>
                 <p><strong>Short Bio:</strong></p>
                 <div class="bio-box">
@@ -49,7 +50,7 @@
 
         <section id="work" class="tab-content">
             <h2>Work Experience & Teaching</h2>
-            <p><strong>Teaching Assistant</strong>, <a href="https://szu.edu.af/en" target="_blank">Shaikh Zayed University</a>, Afghanistan (April 2019 - March 2022)</p>
+            <p><strong>Teaching Assistant</strong>, <a href="https://szu.edu.af/en" target="_blank" rel="noopener noreferrer">Shaikh Zayed University</a>, Afghanistan (April 2019 - March 2022)</p>
             <p><strong>Research Assistant</strong>, University of Tsukuba, Japan (2022-Present)</p>
             <p><strong>Courses Taught:</strong></p>
             <ul>
@@ -97,19 +98,19 @@
             </form>
             <p><strong>Email:</strong> ah.walikhan@gmail.com, wk.ahmadzai.szu.edu.af</p>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank">
+                <a href="https://www.linkedin.com/in/wali-khan-ahmadzai-b179961a2/" target="_blank" rel="noopener noreferrer">
                     <img src="linkedin-icon.png" alt="LinkedIn">
                 </a>
-                <a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank">
+                <a href="https://www.researchgate.net/profile/Wali-Khan-Ahmadzai" target="_blank" rel="noopener noreferrer">
                     <img src="researchgate-icon.png" alt="ResearchGate">
                 </a>
-                <a href="https://x.com/WKAhmadzai1" target="_blank">
+                <a href="https://x.com/WKAhmadzai1" target="_blank" rel="noopener noreferrer">
                     <img src="x-icon.png" alt="X">
                 </a>
-                <a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank">
+                <a href="https://www.facebook.com/AhmadziWaliKhan" target="_blank" rel="noopener noreferrer">
                     <img src="facebook-icon.png" alt="Facebook">
                 </a>
-                <a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank">
+                <a href="https://scholar.google.com/citations?user=yPdG7nsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
                     <img src="google-scholar-icon.png" alt="Google Scholar">
                 </a>
             </div>
@@ -135,8 +136,7 @@
     </main>
 
     <footer>
-        <div class="footer-line"></div>
-        <p>© 2024 Wali Khan Ahmadzai</p>
+        <p>&copy; 2024 Wali Khan Ahmadzai. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
