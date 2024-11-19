@@ -115,13 +115,9 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .footer-line {
