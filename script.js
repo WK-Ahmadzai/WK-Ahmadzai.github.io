@@ -38,3 +38,14 @@ window.addEventListener('DOMContentLoaded', () => {
         defaultTabLink.setAttribute('aria-selected', 'true'); // Accessibility enhancement
     }
 });
+
+// JavaScript to make header thinner when scrolling
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        if (window.scrollY > 50) { // 50px scroll distance for header to become thinner
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
