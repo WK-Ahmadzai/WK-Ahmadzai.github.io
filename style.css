@@ -145,30 +145,39 @@ main {
     padding-bottom: 50px; /* Ensure there is space for the footer */
 }
 
-/* Footer */
+/* General Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes full height */
+}
+
+/* Wrapper to allow footer to stay at the bottom */
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px; /* Ensure there is space for the footer */
+}
+
+/* Footer styling */
 footer {
-    position: relative; /* Change position to relative */
     text-align: center;
     background-color: #333;
     color: white;
     padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem;
-    margin-top: auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative; /* Footer part of normal page flow */
+    margin-top: auto; /* Pushes it to the bottom of the screen if needed */
+    width: 100%; /* Make it span the full width of the page */
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+/* Optional: Ensure the page does not overflow */
+body {
     display: flex;
     flex-direction: column;
-}
-
-main {
-    flex: 1;
+    min-height: 100vh; /* Full viewport height */
 }
 
 .footer-line {
