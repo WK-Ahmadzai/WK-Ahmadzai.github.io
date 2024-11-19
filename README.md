@@ -75,6 +75,20 @@
             </ul>
         </section>
 
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch with me, please use the contact information below or fill out the form:</p>
+            <form action="mailto:ah.walikhan@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
         <section id="cv" class="tab-content">
             <h2>Curriculum Vitae</h2>
             <a href="Ahmadzai_CV.pdf" class="cv-link" download>Download My CV</a>
