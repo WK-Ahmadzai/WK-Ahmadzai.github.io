@@ -99,12 +99,12 @@
             <p><strong>Internships:</strong></p>
             <ul>
                 <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
-                <li><strong>Intern atGPSS Group</strong>, I collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
+                <li><strong>Intern at GPSS Group</strong>, Collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
             </ul>
             <p><strong>Memberships:</strong></p>
             <ul>
            <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
-                <li><strong>Member</strong>, GJapan Food System Society (2023 - Present)</li>
+                <li><strong>Member</strong>, Japan Food System Society (2023 - Present)</li>
             </ul>
             <p><strong>Conference Presentations:</strong></p>
             <ul>
