@@ -35,7 +35,7 @@
 
                 <p><strong>Education:</strong></p>
                 <ul>
-                    <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (2023-2025, expected)</li>
+                    <li><strong>MSc. Agricultural Economics</strong>, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (April 2023 - March 2025, expected)</li>
                     <li><strong>BSc. Agricultural Economics and Extension</strong>, <a href="https://www.pu.edu.af/" target="_blank" rel="noopener noreferrer">Paktia University</a>, Afghanistan (2015-2018)</li>
                     <li><strong>Non-degree Research Student</strong>, Agricultural Economics, <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a> (April 2022 - March 2023)</li>
                 </ul>
