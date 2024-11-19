@@ -12,7 +12,6 @@
 <body>
     <header>
         <div class="header-wrapper">
-            <h1 class="portfolio-name">Wali Khan Ahmadzai</h1>
             <nav class="tabs-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="#" class="tab-link" data-tab="about" aria-current="page">About</a></li>
