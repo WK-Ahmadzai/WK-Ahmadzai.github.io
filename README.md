@@ -65,11 +65,11 @@
             <h2>Research</h2>
             <p><strong>Publications:</strong></p>
             <ul>
-                <li>Ahmadzai, W. K., & Aryobi, H. G. (2023). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
+                <li>Ahmadzai, W. K., & Aryobi, H. G. (2021). "Natural and Socio-economic Factors Affecting the Household Food Security in Rural Areas of Paktia Province, Afghanistan." <i>Asian Journal of Agricultural Extension, Economics & Sociology</i>, 39(2), 1-11.</li>
             </ul>
             <p><strong>Work in Progress:</strong></p>
             <ul>
-                <li>Empowering Afghan Women through the Saffron Industry (Submission Stage)</li>
+                <li>Empowering Afghan Women through the Saffron Industry (Under Review)</li>
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
             </ul>
