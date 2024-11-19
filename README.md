@@ -118,13 +118,13 @@
             <h2>Professional Development / Outreach</h2>
             <p><strong>Internships:</strong></p>
             <ul>
-                <li><strong>Intern</strong>, Japan Agricultural Economics Society (Summer 2023)</li>
-                <li><strong>Intern</strong>, Global Partnership for Saffron Producers (Summer 2024)</li>
+                <li><strong>Intern</strong>, Japan Space System, Utilized satellite data and remote sensing techniques (Summer 2023)</li>
+                <li><strong>Intern</strong>, GPSS Group, I collaborated with the marketing intelligence team (Summer 2024)</li>
             </ul>
             <p><strong>Memberships:</strong></p>
             <ul>
-                <li>Member, Agricultural Economics Society of Japan</li>
-                <li>Member, Afghan Society for Agricultural Development</li>
+                <li>Member, Agricultural Economics Society of Japan (2023 - Present)</li>
+                <li>Member, Japan Food System Society (2023 - Present)</li>
             </ul>
             <p><strong>Presentations:</strong></p>
             <ul>
