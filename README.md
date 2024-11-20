@@ -58,7 +58,7 @@
                 <li>AgEc731 - Production Economics (Fall 2019)</li>
                 <li>AgEc418 - Econometrics (Spring 2020)</li>
                 <li>AgEc630 - Applied Econometrics (Spring 2021)</li>
-                <li>Econometrics Using R Programming (2023 - Present)</li>
+                <li>Lab Instructor - Econometrics Using R Programming (2023 - Present)</li>
             </ul>
         </section>
 
