@@ -276,6 +276,20 @@ footer p {
     .portfolio-name {
         font-size: 1.5rem;
     }
+/* Styling for the Languages Section */
+.languages-box {
+    background-color: #f9f9f9; /* Light grey for contrast */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px 20px;
+    margin: 20px 0; /* Spacing from other sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.languages-box h3 {
+    margin-top: 0;
+    color: #333; /* Darker text for heading */
+    font-size: 1.2rem;
 }
 
 .language-list {
@@ -287,10 +301,9 @@ footer p {
 .language-list li {
     margin-bottom: 8px;
     font-size: 1rem;
-    color: #333;
+    color: #555; /* Slightly darker text for readability */
 }
 
 .language-list li strong {
-    color: #00bcd4; /* Highlight for language name */
+    color: #00bcd4; /* Highlighted color for language names */
 }
-
