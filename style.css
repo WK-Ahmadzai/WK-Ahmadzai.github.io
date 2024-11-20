@@ -277,3 +277,20 @@ footer p {
         font-size: 1.5rem;
     }
 }
+
+.language-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.language-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.language-list li strong {
+    color: #00bcd4; /* Highlight for language name */
+}
+
