@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wali Khan Ahmadzai's professional portfolio showcasing academic achievements, research, and work experience in Agricultural Economics.">
-    <meta name="keywords" content="Wali Khan Ahmadzai, Agricultural Economics, Research, Work Experience, CV, Contact">
+    <meta name="description" content="Portfolio of Wali Khan Ahmadzai, showcasing academic achievements, research in Agricultural Economics, and professional experience.">
+    <meta name="keywords" content="Wali Khan Ahmadzai, Agricultural Economics, Research, Work Experience, CV, Contact Information">
     <meta name="author" content="Wali Khan Ahmadzai">
     <title>Wali Khan Ahmadzai's Portfolio</title>
     <link rel="stylesheet" href="style.css">
