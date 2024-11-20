@@ -1,6 +1,6 @@
-// Handle tab switching with enhancements
+// Handle tab switching with accessibility enhancements
 document.querySelectorAll('.tab-link').forEach(tabLink => {
-    tabLink.addEventListener('click', function(event) {
+    tabLink.addEventListener('click', function (event) {
         event.preventDefault();
 
         // Hide all tab content sections
@@ -12,8 +12,10 @@ document.querySelectorAll('.tab-link').forEach(tabLink => {
         // Show the clicked tab's content
         const tabId = this.getAttribute('data-tab');
         const targetTabContent = document.getElementById(tabId);
-        targetTabContent.classList.add('active');
-        targetTabContent.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
+        if (targetTabContent) {
+            targetTabContent.classList.add('active');
+            targetTabContent.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
+        }
 
         // Highlight the active tab
         document.querySelectorAll('.tab-link').forEach(link => {
@@ -25,12 +27,11 @@ document.querySelectorAll('.tab-link').forEach(tabLink => {
     });
 });
 
-// Default to show the "About" section when the page loads
+// Set default active tab and ensure accessibility compliance
 window.addEventListener('DOMContentLoaded', () => {
     const defaultTab = document.getElementById('about');
     const defaultTabLink = document.querySelector('.tab-link[data-tab="about"]');
 
-    // Ensure the default tab is active
     if (defaultTab && defaultTabLink) {
         defaultTab.classList.add('active');
         defaultTab.setAttribute('aria-hidden', 'false'); // Accessibility enhancement
