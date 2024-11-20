@@ -21,7 +21,7 @@ header {
     background-color: #00bcd4;
     color: #fff;
     padding: 15px 20px;
-    position: static;
+    position: fixed;
     margin-bottom: auto;
     width: 100%;
     top: 0;
