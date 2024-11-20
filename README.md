@@ -70,7 +70,7 @@
             </ul>
             <p><strong>Work in Progress:</strong></p>
             <ul>
-                <li>Empowering Afghan Women through the Saffron Industry (Submission Stage)</li>
+                <li>Empowering Afghan Women through the Saffron Industry (Under Review)</li>
                 <li>Japanese Consumers' Preferences for Afghan Saffron (Data Collection Stage)</li>
                 <li>Afghan Consumer’s Perception of Genome-Edited Food (Analysis Stage)</li>
             </ul>
