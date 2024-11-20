@@ -120,7 +120,7 @@
         <ul class="language-list">
             <li><strong>Pashto:</strong> Native proficiency</li>
             <li><strong>Dari (Persian):</strong> Professional proficiency</li>
-            <li><strong>English:</strong> Advanced proficiency (IELTS: 6.5)</li>
+            <li><strong>English:</strong> Advanced proficiency</li>
             <li><strong>Japanese:</strong> Conversational proficiency</li>
             <li><strong>Urdu & Hindi:</strong> Basic understanding</li>
             <li><strong>Arabic:</strong> Literate (can read and write)</li>
