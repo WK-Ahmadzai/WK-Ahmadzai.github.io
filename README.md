@@ -31,7 +31,7 @@
             <h2>About Me</h2>
             <div class="about-box">
                 <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic" style="max-width: 250px; height: auto;">
-                <p><strong> Graduate Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a>, Japan</p>
+                <p><strong>Current Position:</strong> Graduate Student in Agricultural Economics at the <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener noreferrer">University of Tsukuba</a>, Japan</p>
 
                 <p><strong>Education:</strong></p>
                 <ul>
