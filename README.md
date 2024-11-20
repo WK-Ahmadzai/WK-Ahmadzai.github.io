@@ -99,23 +99,24 @@
         </section>
 
         <section id="outreach" class="tab-content">
-            <h2>Professional Development / Outreach</h2>
-            <p><strong>Internships:</strong></p>
-            <ul>
-                <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
-                <li><strong>Intern at GPSS Group</strong>, Collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
-            </ul>
-            <p><strong>Memberships:</strong></p>
-            <ul>
-                <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
-                <li><strong>Member</strong>, Japan Food System Society (2023 - Present)</li>
-            </ul>
-            <p><strong>Conference Presentations:</strong></p>
-            <ul>
-                <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
-            </ul>
-        </section>
-           <div class="languages-box">
+    <h2>Professional Development / Outreach</h2>
+    <p><strong>Internships:</strong></p>
+    <ul>
+        <li><strong>Intern at Japan Space System</strong>, Utilized satellite data and remote sensing techniques (Tokyo, Summer 2023)</li>
+        <li><strong>Intern at GPSS Group</strong>, Collaborated with the marketing intelligence team (Tokyo, Summer 2024)</li>
+    </ul>
+    <p><strong>Memberships:</strong></p>
+    <ul>
+        <li><strong>Member</strong>, Japan Agricultural Economics Society (2023 - Present)</li>
+        <li><strong>Member</strong>, Japan Food System Society (2023 - Present)</li>
+    </ul>
+    <p><strong>Conference Presentations:</strong></p>
+    <ul>
+        <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
+    </ul>
+
+    <!-- Languages Section -->
+    <div class="languages-box">
         <h3>Languages</h3>
         <ul class="language-list">
             <li><strong>Pashto:</strong> Native proficiency</li>
