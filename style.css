@@ -198,18 +198,15 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    padding: 5px 10px;
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
     right:0;
     z-index: 999;
     font-size: 0.9rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    position: relative; /* Footer part of normal page flow */
-    margin-top: auto; /* Pushes it to the bottom of the screen if needed */
-    width: 100%; /* Make it span the full width of the page */
-}
+    margin-top: auto;
+    width: 100%;
 
 /* Optional: Ensure the page does not overflow */
 body {
