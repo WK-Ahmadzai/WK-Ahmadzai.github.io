@@ -115,15 +115,17 @@
                 <li><strong>Japan Food System Conference (2023)</strong>, Topic: "The Role of Saffron in Sustainable Agricultural Practices in Afghanistan"</li>
             </ul>
         </section>
-            <h3>Languages</h3>
-    <ul class="language-list">
-        <li><strong>Pashto:</strong> Native proficiency</li>
-        <li><strong>Dari (Persian):</strong> Professional proficiency</li>
-        <li><strong>English:</strong> Advanced proficiency</li>
-        <li><strong>Japanese:</strong> Conversational proficiency</li>
-        <li><strong>Urdu & Hindi:</strong> Basic understanding</li>
-        <li><strong>Arabic:</strong> Literate (can read and write)</li>
-    </ul>
+           <div class="languages-box">
+        <h3>Languages</h3>
+        <ul class="language-list">
+            <li><strong>Pashto:</strong> Native proficiency</li>
+            <li><strong>Dari (Persian):</strong> Professional proficiency</li>
+            <li><strong>English:</strong> Advanced proficiency (IELTS: 6.5)</li>
+            <li><strong>Japanese:</strong> Conversational proficiency</li>
+            <li><strong>Urdu & Hindi:</strong> Basic understanding</li>
+            <li><strong>Arabic:</strong> Literate (can read and write)</li>
+        </ul>
+    </div>
 </section>
     </main>
 
