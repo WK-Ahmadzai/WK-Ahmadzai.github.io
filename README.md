@@ -46,7 +46,8 @@
 
 <section id="research" class="tab-content">
   <h2>Research</h2>
-  <p>Household Food Security in Rural Afghanistan</p>
+    <p>AHMADZAI, W. K., & UJIIE, K. (2025). Assessing Women’s Empowerment in the Context of Saffron Production in Afghanistan. Food System Journal, 31(4), 313-318.</p>
+  <p>Ahmadzai, W. K., & Aryobi, H. G. Natural and Socio-economics Factors Affecting the Household Food Security in Rural Area of Paktia Province, Afghanistan.</p>
 </section>
 
 <section id="cv" class="tab-content">
