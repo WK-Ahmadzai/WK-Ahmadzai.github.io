@@ -1,24 +1,26 @@
-let lastScrollY = window.scrollY;
+let lastScroll = window.scrollY;
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
-/* =======================
-   SMART HEADER & FOOTER
-======================= */
+/* Header hide/show */
 window.addEventListener("scroll", () => {
-    if (window.scrollY > lastScrollY) {
+    if (window.scrollY > lastScroll) {
         header.classList.add("hide");
-        footer.classList.add("hide");
     } else {
         header.classList.remove("hide");
-        footer.classList.remove("hide");
     }
-    lastScrollY = window.scrollY;
+    lastScroll = window.scrollY;
+
+    /* Footer only at bottom */
+    const scrollBottom = window.innerHeight + window.scrollY;
+    if (scrollBottom >= document.body.offsetHeight - 5) {
+        footer.classList.add("show");
+    } else {
+        footer.classList.remove("show");
+    }
 });
 
-/* =======================
-   TAB SWITCHING
-======================= */
+/* Tabs */
 document.querySelectorAll(".tab-link").forEach(link => {
     link.addEventListener("click", e => {
         e.preventDefault();
@@ -30,36 +32,24 @@ document.querySelectorAll(".tab-link").forEach(link => {
             l.classList.remove("active")
         );
 
-        const target = document.getElementById(link.dataset.tab);
-        if (target) {
-            target.classList.add("active");
-            link.classList.add("active");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
+        document.getElementById(link.dataset.tab).classList.add("active");
+        link.classList.add("active");
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
 
-/* =======================
-   CLICK NAME = HOME
-======================= */
+/* Name click = home */
 document.querySelector(".portfolio-name").addEventListener("click", () => {
     document.querySelectorAll(".tab-content").forEach(tab =>
         tab.classList.remove("active")
     );
+    document.getElementById("about").classList.add("active");
+
     document.querySelectorAll(".tab-link").forEach(l =>
         l.classList.remove("active")
     );
-
-    document.getElementById("about").classList.add("active");
     document.querySelector('[data-tab="about"]').classList.add("active");
 
     window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-/* =======================
-   DEFAULT TAB
-======================= */
-window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("about").classList.add("active");
-    document.querySelector('[data-tab="about"]').classList.add("active");
 });
