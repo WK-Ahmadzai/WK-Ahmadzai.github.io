@@ -1,53 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('main-header');
-    const brandName = document.getElementById('refresh-brand');
-    let lastScroll = 0;
+// TAB SWITCHING
+document.querySelectorAll('.tab-link').forEach(tab => {
+    tab.addEventListener('click', e => {
+        e.preventDefault();
 
-    // 1. Refresh Page on Name Click
-    brandName.addEventListener('click', () => {
-        window.location.reload();
+        document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
     });
+});
 
-    // 2. Tab Switching Logic
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
+// HEADER HIDE / SHOW ON SCROLL
+let lastScroll = 0;
+const header = document.getElementById('main-header');
 
-    tabLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = link.getAttribute('data-tab');
+window.addEventListener('scroll', () => {
+    const current = window.pageYOffset;
+    header.style.top = current > lastScroll ? "-120px" : "0";
+    lastScroll = current;
+});
 
-            // Update Active Link
-            tabLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-
-            // Show Content
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                if (content.id === target) {
-                    content.classList.add('active');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-        });
-    });
-
-    // 3. Smart Header (Hides on Scroll Down, Shows on Scroll Up)
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll <= 0) {
-            header.classList.remove('header-hidden');
-            return;
-        }
-
-        if (currentScroll > lastScroll && !header.classList.contains('header-hidden')) {
-            // Scrolling Down
-            header.classList.add('header-hidden');
-        } else if (currentScroll < lastScroll && header.classList.contains('header-hidden')) {
-            // Scrolling Up
-            header.classList.remove('header-hidden');
-        }
-        lastScroll = currentScroll;
-    });
+// CLICK NAME = RESET TO ABOUT
+document.getElementById('homeBtn').addEventListener('click', () => {
+    location.reload();
 });
