@@ -1,157 +1,98 @@
-/* Modern Root Variables */
-:root {
-    --primary: #00838f;
-    --accent: #00bcd4;
-    --dark: #2c3e50;
-    --light: #f8fafc;
-    --shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--light);
-    color: var(--dark);
-    line-height: 1.7;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* 1. Header & Navigation (Responsive) */
+/* HEADER */
 header {
-    background: white;
-    padding: 1rem 5%;
     position: fixed;
-    top: 0; width: 100%;
+    top: 0;
+    width: 100%;
+    background: #00bcd4;
     z-index: 1000;
-    box-shadow: var(--shadow);
-    transition: transform 0.4s ease; /* For hiding/showing */
+    transition: top 0.3s ease;
 }
-
-/* Class to hide header on scroll down */
-.header-hidden { transform: translateY(-100%); }
 
 .header-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .portfolio-name {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
+/* NAV */
 .tabs-nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
     gap: 15px;
 }
 
 .tabs-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.tabs-nav a.active, .tabs-nav a:hover {
-    background: var(--primary);
     color: white;
+    text-decoration: none;
 }
 
-/* 2. Main Layout */
+.tabs-nav a.active {
+    border-bottom: 2px solid white;
+}
+
+/* MAIN */
 main {
-    margin-top: 100px;
-    padding: 20px 5%;
-    min-height: 85vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 15px 40px;
 }
 
-.content-card {
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ABOUT */
+.about-box {
+    display: flex;
+    gap: 20px;
     background: white;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-}
-
-/* 3. About Section Grid */
-.about-grid {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 40px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .profile-pic {
-    width: 100%;
-    border-radius: 15px;
-    border: 4px solid var(--light);
-    box-shadow: var(--shadow);
-    margin-bottom: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
 }
 
-/* 4. Language Tags Feature */
-.lang-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-.lang-tags span {
-    background: #e0f7fa;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--primary);
-    font-weight: 600;
+.bio-box {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* 5. Footer (Responsive & Floating) */
+/* FOOTER */
 footer {
-    background: var(--dark);
-    color: white;
-    padding: 30px 0;
     width: 100%;
-    margin-top: 50px;
-}
-
-.footer-content {
+    background: #333;
+    color: white;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 12px;
 }
 
-/* 6. Mobile Responsiveness (The "Smart Phone" Fit) */
+/* MOBILE */
 @media (max-width: 768px) {
-    .header-wrapper { flex-direction: column; gap: 15px; }
-    .tabs-nav ul { 
-        gap: 5px; 
-        flex-wrap: wrap; 
-        justify-content: center; 
-    }
-    .tabs-nav a { font-size: 0.8rem; padding: 5px 8px; }
-    .about-grid { grid-template-columns: 1fr; text-align: center; }
-    .profile-sidebar { order: -1; }
-    main { margin-top: 160px; }
+    .header-wrapper { flex-direction: column; }
+    .tabs-nav ul { flex-direction: column; align-items: center; }
+    .about-box { flex-direction: column; align-items: center; text-align: center; }
 }
-
-/* Animation */
-.tab-content { display: none; animation: fadeIn 0.5s ease; }
-.tab-content.active { display: block; }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.social-links { font-size: 1.5rem; margin-top: 20px; }
-.social-links a { color: var(--primary); margin: 0 15px; transition: 0.3s; }
-.social-links a:hover { color: var(--accent); transform: scale(1.2); }
