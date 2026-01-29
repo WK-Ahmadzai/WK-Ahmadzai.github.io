@@ -1,35 +1,37 @@
 // TAB SWITCHING
-document.querySelectorAll('.tab-link').forEach(tab => {
-  tab.addEventListener('click', e => {
-    e.preventDefault();
+document.querySelectorAll('.tab-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
 
-    document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
 
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.tab).classList.add('active');
-  });
+        document.querySelectorAll('.tab-link').forEach(l => {
+            l.classList.remove('active');
+        });
+
+        document.getElementById(link.dataset.tab).classList.add('active');
+        link.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 
-// HEADER HIDE / SHOW
+// HEADER AUTO-HIDE
 let lastScroll = 0;
 const header = document.getElementById('main-header');
 
 window.addEventListener('scroll', () => {
-  const current = window.pageYOffset;
-  header.style.top = current > lastScroll ? "-120px" : "0";
-  lastScroll = current;
-
-  // FOOTER SHOW ONLY AT BOTTOM
-  const footer = document.getElementById('main-footer');
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
-    footer.style.bottom = "0";
-  } else {
-    footer.style.bottom = "-100px";
-  }
+    const current = window.scrollY;
+    if (current > lastScroll && current > 100) {
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        header.style.transform = 'translateY(0)';
+    }
+    lastScroll = current;
 });
 
-// RESET TO ABOUT
+// CLICK NAME → REFRESH & ABOUT
 document.getElementById('homeBtn').addEventListener('click', () => {
-  location.reload();
+    window.location.reload();
 });
