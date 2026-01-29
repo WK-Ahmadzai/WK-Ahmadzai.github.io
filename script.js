@@ -1,11 +1,53 @@
-document.querySelectorAll(".tab-link").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('main-header');
+    const brandName = document.getElementById('refresh-brand');
+    let lastScroll = 0;
 
-    document.querySelectorAll(".tab-link").forEach(l => l.classList.remove("active"));
-    document.querySelectorAll(".tab-content").forEach(t => t.classList.remove("active"));
+    // 1. Refresh Page on Name Click
+    brandName.addEventListener('click', () => {
+        window.location.reload();
+    });
 
-    link.classList.add("active");
-    document.getElementById(link.dataset.tab).classList.add("active");
-  });
+    // 2. Tab Switching Logic
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = link.getAttribute('data-tab');
+
+            // Update Active Link
+            tabLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+
+            // Show Content
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === target) {
+                    content.classList.add('active');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+    });
+
+    // 3. Smart Header (Hides on Scroll Down, Shows on Scroll Up)
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            header.classList.remove('header-hidden');
+            return;
+        }
+
+        if (currentScroll > lastScroll && !header.classList.contains('header-hidden')) {
+            // Scrolling Down
+            header.classList.add('header-hidden');
+        } else if (currentScroll < lastScroll && header.classList.contains('header-hidden')) {
+            // Scrolling Up
+            header.classList.remove('header-hidden');
+        }
+        lastScroll = currentScroll;
+    });
 });
