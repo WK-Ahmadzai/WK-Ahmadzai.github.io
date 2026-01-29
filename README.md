@@ -38,7 +38,7 @@
             <img src="Profile.jpg" alt="Wali Khan Ahmadzai" class="profile-pic">
 
             <div>
-                <p><strong>Current Position:</strong> Graduate Student in Agricultural Economics at
+                <p><strong>Current Position:</strong> Research Assistant in Agricultural Economics at
                     <a href="https://www.tsukuba.ac.jp/" target="_blank">University of Tsukuba</a>, Japan</p>
 
                 <p><strong>Education:</strong></p>
