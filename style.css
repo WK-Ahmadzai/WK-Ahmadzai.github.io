@@ -1,306 +1,171 @@
-/* Basic Reset */
+/* =======================
+   RESET & GLOBAL
+======================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
 }
 
-/* Header */
+/* =======================
+   HEADER (SMART)
+======================= */
 header {
     background-color: #00bcd4;
     color: #fff;
     padding: 15px 20px;
     position: fixed;
-    margin-bottom: auto;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 999;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.35s ease;
 }
 
+header.hide {
+    transform: translateY(-100%);
+}
 
 .header-wrapper {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
+/* =======================
+   NAV
+======================= */
 .tabs-nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
-.tabs-nav li a {
-    color: #fff;
+.tabs-nav a {
+    color: white;
     text-decoration: none;
     font-size: 1rem;
-    padding: 5px 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 6px 10px;
 }
 
-.tabs-nav li a:hover {
-    color: #00acc1;
-    transform: scale(1.1);
-}
-
-.tabs-nav li a.active {
+.tabs-nav a.active {
     border-bottom: 2px solid #fff;
-    font-weight: bold;
 }
 
-/* Tab Content */
+/* =======================
+   MAIN CONTENT
+======================= */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px 80px;
+}
+
 .tab-content {
     display: none;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .tab-content.active {
     display: block;
-    opacity: 1;
-    transform: translateY(0);
-    padding-top: 80px; 
-}
-/* Ensure that the tab content is hidden when inactive */
-.tab-content {
-    display: none;
 }
 
-.tab-content.active {
-    display: block; /* Show the active tab content */
-}
-/* Boxes for Content */
+/* =======================
+   CONTENT BOXES
+======================= */
 .about-box,
 .bio-box,
 .work-box,
-.research-box {
+.research-box,
+.languages-box {
+    background: #fff;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-box:hover,
-.bio-box:hover,
-.work-box:hover,
-.research-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    display: block;
+    margin: 15px auto;
     border: 3px solid #00bcd4;
 }
 
-/* General Layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Wrapper to allow footer to stay at the bottom */
-main {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px; /* Ensure there is space for the footer */
-}
-
-/* General Layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Wrapper to allow footer to stay at the bottom */
-main {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px; /* Ensure there is space for the footer */
-}
-
-/* General Layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Wrapper to allow footer to stay at the bottom */
-main {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px; /* Ensure there is space for the footer */
-}
-
-/* General Layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Wrapper to allow footer to stay at the bottom */
-main {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px; /* Ensure there is space for the footer */
-}
-
-/* General Layout */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Wrapper to allow footer to stay at the bottom */
-main {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px; /* Ensure there is space for the footer */
-}
-
-/* Footer styling */
+/* =======================
+   FOOTER (SMART)
+======================= */
 footer {
-    text-align: center;
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 10px 0;
-    position: static;
+    text-align: center;
+    padding: 15px 10px;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right:0;
-    z-index: 999;
-    font-size: 0.9rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    margin-top: auto;
     width: 100%;
-
-/* Optional: Ensure the page does not overflow */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    transition: transform 0.35s ease;
 }
 
-
-
-
-.footer-line {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    margin-top: 20px;
+footer.hide {
+    transform: translateY(100%);
 }
 
-footer p {
-    font-size: 0.8rem;
-    margin-top: 5px;
-}
-
-/* Link Styling for CV Download */
+/* =======================
+   LINKS
+======================= */
 .cv-link {
-    background-color: #00bcd4;
+    display: inline-block;
+    margin-top: 15px;
+    background: #00bcd4;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cv-link:hover {
-    background-color: #0097a7;
-    transform: translateY(-3px);
-}
-
-/* Social Media Icons */
-.social-media a {
-    margin: 0 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-
-.social-media img:hover {
-    transform: scale(1.2);
-}
-
-/* Responsive Design */
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
 @media (max-width: 768px) {
     .header-wrapper {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
+
     .tabs-nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
     .portfolio-name {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
-/* Styling for the Languages Section */
-.languages-box {
-    background-color: #f9f9f9; /* Light grey for contrast */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 15px 20px;
-    margin: 20px 0; /* Spacing from other sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
-.languages-box h3 {
-    margin-top: 0;
-    color: #333; /* Darker text for heading */
-    font-size: 1.2rem;
-}
-
-.language-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.language-list li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-    color: #555; /* Slightly darker text for readability */
-}
-
-.language-list li strong {
-    color: #000000; /* Highlighted color for language names */
+    main {
+        padding-top: 120px;
+    }
 }
