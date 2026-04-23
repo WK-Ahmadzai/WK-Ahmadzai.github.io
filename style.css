@@ -1,138 +1,88 @@
-/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* BODY */
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f8fb;
-    color: #333;
-    min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8fb;
+  color: #1f2933;
 }
 
-/* ================= HEADER ================= */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;              /* FULL WIDTH */
-    background: #00bcd4;
-    z-index: 1000;
-    transition: transform 0.5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0c4a6e;
+  color: white;
+  z-index: 1000;
+  transition: transform 0.4s ease;
 }
 
 .header-wrapper {
-    width: 100%;               /* FULL WIDTH */
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* NAME */
 .portfolio-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ffffff;            /* FORCE WHITE */
-    cursor: pointer;
-    white-space: nowrap;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* NAV */
 .tabs-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 18px;
 }
 
 .tabs-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 .tabs-nav a.active {
-    border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid white;
 }
 
-/* ================= MAIN ================= */
 main {
-    padding-top: 100px;
-    width: 100%;
-    max-width: 1100px;         /* CONTENT ONLY, NOT HEADER */
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 110px;
 }
 
-/* TABS */
 .tab-content {
-    display: none;
-    padding: 20px;
+  display: none;
+  padding: 30px 20px;
 }
 
 .tab-content.active {
-    display: block;
+  display: block;
 }
 
-/* ABOUT LAYOUT */
 .about-layout {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.profile-pic {
-    width: 200px;
-    border-radius: 50%;
-    border: 3px solid #00bcd4;
-}
-
-/* BOXES */
 .about-box,
 .bio-box,
 .languages-box {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-/* ================= FOOTER ================= */
 footer {
-    width: 100vw;              /* FULL WIDTH */
-    background: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 10px;
-    width: 100vw; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+  margin-top: 60px;
 }
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-    .header-wrapper {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .tabs-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding-top: 140px;
-    }
-
-    .about-layout {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
