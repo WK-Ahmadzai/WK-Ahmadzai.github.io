@@ -1,0 +1,1 @@
+Put your profile image at assets/Profile.png and your CV file as Ahmadzai_CV.pdf in the same folder as index.html. Replace placeholder # links with your real profile/repository URLs.
