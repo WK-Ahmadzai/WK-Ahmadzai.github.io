@@ -408,7 +408,34 @@ body.dark-mode .kicker {
 .styled-list {
   padding-left: 20px;
 }
+.topic-block + .topic-block {
+  margin-top: 18px;
+}
 
+.topic-block h4 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.topic-block p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.compact-list {
+  margin-top: 6px;
+}
+
+.compact-list li {
+  margin-top: 4px;
+}
+
+.extra-profile-row {
+  margin-top: 24px;
+}
 .styled-list li + li {
   margin-top: 8px;
 }
